@@ -56,12 +56,16 @@ if __name__ == "__main__":
 
     text = res.text
 
-    if 'https://' == text[:8]:
-        nodes = re.findall(r'url=(\S+)&insert=', unquote(text))[0].split('|')
-        nodes_ori = base64.b64encode('\n'.join(nodes).encode(encoding='UTF-8')).decode('UTF-8')
-    else:
-        nodes = base64.b64decode(text).decode('UTF-8').split('\n')
-        nodes_ori = text
+    try:
+        if 'https://' == text[:8]:
+            nodes = re.findall(r'url=(\S+)&insert=', unquote(text))[0].split('|')
+            nodes_ori = base64.b64encode('\n'.join(nodes).encode(encoding='UTF-8')).decode('UTF-8')
+        else:
+            nodes = base64.b64decode(text.encode(encoding='UTF-8')).decode('UTF-8').split('\n')
+            nodes_ori = text
+    except:
+        nodes = ['vmess://ew0KICAidiI6ICIyIiwNCiAgInBzIjogIjAyIiwNCiAgImFkZCI6ICIxMDQuMTYuMTU1LjQ3IiwNCiAgInBvcnQiOiAiNDQzIiwNCiAgImlkIjogImM2NzQ3ZGE0LWZiMmUtNGEyYS1iZGI3LTg2MTRiZGQ2YjBiMyIsDQogICJhaWQiOiAiMCIsDQogICJzY3kiOiAiYXV0byIsDQogICJuZXQiOiAid3MiLA0KICAidHlwZSI6ICJub25lIiwNCiAgImhvc3QiOiAic2czLXYycmF5LnNzaGtpdC5vcmciLA0KICAicGF0aCI6ICIvc3Noa2l0LzE3MzY5NjAxMTEvNjM4NTliYzE3N2EzMy8iLA0KICAidGxzIjogInRscyIsDQogICJzbmkiOiAic2czLXYycmF5LnNzaGtpdC5vcmciLA0KICAiYWxwbiI6ICIiDQp9']
+        nodes_ori = 'dm1lc3M6Ly9ldzBLSUNBaWRpSTZJQ0l5SWl3TkNpQWdJbkJ6SWpvZ0lqQXlJaXdOQ2lBZ0ltRmtaQ0k2SUNJeE1EUXVNVFl1TVRVMUxqUTNJaXdOQ2lBZ0luQnZjblFpT2lBaU5EUXpJaXdOQ2lBZ0ltbGtJam9nSW1NMk56UTNaR0UwTFdaaU1tVXROR0V5WVMxaVpHSTNMVGcyTVRSaVpHUTJZakJpTXlJc0RRb2dJQ0poYVdRaU9pQWlNQ0lzRFFvZ0lDSnpZM2tpT2lBaVlYVjBieUlzRFFvZ0lDSnVaWFFpT2lBaWQzTWlMQTBLSUNBaWRIbHdaU0k2SUNKdWIyNWxJaXdOQ2lBZ0ltaHZjM1FpT2lBaWMyY3pMWFl5Y21GNUxuTnphR3RwZEM1dmNtY2lMQTBLSUNBaWNHRjBhQ0k2SUNJdmMzTm9hMmwwTHpFM016WTVOakF4TVRFdk5qTTROVGxpWXpFM04yRXpNeThpTEEwS0lDQWlkR3h6SWpvZ0luUnNjeUlzRFFvZ0lDSnpibWtpT2lBaWMyY3pMWFl5Y21GNUxuTnphR3RwZEM1dmNtY2lMQTBLSUNBaVlXeHdiaUk2SUNJaURRcDk='
 
     nodes_b64_en = base64.b64encode(modIP(nodes).encode(encoding='UTF-8'))
     nodes_b64_de = nodes_b64_en.decode('UTF-8')
