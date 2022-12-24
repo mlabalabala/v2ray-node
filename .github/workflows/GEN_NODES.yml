@@ -1,0 +1,36 @@
+name: GEN_NODES
+
+on: workflow_dispatch
+# on:
+#   schedule:
+#     - cron: "0 0 12/23 * *"
+  
+
+jobs:
+  work:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - uses: szenius/set-timezone@v1.0 # 设置执行环境的时区
+        with:
+          timezoneLinux: "Asia/Shanghai"
+      - uses: actions/setup-python@v1 # 使用python装配器
+        with:
+          python-version: 3.8
+          cache: 'pip'
+      - run: pip install -r requirements.txt
+      
+      - name: Run
+        run: |
+          python -v
+          python Gen.py
+          
+      - name: Commit
+        uses: EndBug/add-and-commit@v4
+        with:
+          author_name: GITHUB_GENERATOR
+          author_email: 1842074134@qq.com
+          message: "Updata"
+          add: "nodes"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
