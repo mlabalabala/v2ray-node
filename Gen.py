@@ -1,3 +1,5 @@
+# encoding=UTF-8
+
 import base64, json, re, requests, time
 from urllib.parse import unquote
 
