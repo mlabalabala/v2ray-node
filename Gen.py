@@ -50,35 +50,43 @@ if __name__ == "__main__":
         u = f'https://clashnode.com/wp-content/uploads/{y}/{m}/{y+m+d}.txt'
         # u = f'https://nodefree.org/dy/{y+m}/{y+m+d}.txt'
         # u = f'https://raw.iqiq.io/ermaozi/get_subscribe/main/subscribe/v2ray.txt'
-        print(u)
+        u = f'https://clashnode.com/wp-content/uploads/2022/12/20221224.txt'
+
+        # print(time.strftime('/%Y%m/%Y%m%d'),time.strftime('/%Y/%m/%Y%m%d'))
 
         res = s.get(u, headers=headers, proxies=proxies)
+
         text = res.text
 
         if 'https://' == text[:8]:
+            print('http')
             nodes = re.findall(r'url=(\S+)&insert=', unquote(text))[0].split('|')
             nodes_ori = base64.b64encode('\n'.join(nodes).encode(encoding='UTF-8')).decode('UTF-8')
         else:
+            print('base64')
             nodes = base64.b64decode(text.encode(encoding='UTF-8')).decode('UTF-8').split('\n')
             nodes_ori = text
     except:
+        print('except')
         # nodes = ['vmess://ew0KICAidiI6ICIyIiwNCiAgInBzIjogIjAyIiwNCiAgImFkZCI6ICIxMDQuMTYuMTU1LjQ3IiwNCiAgInBvcnQiOiAiNDQzIiwNCiAgImlkIjogImM2NzQ3ZGE0LWZiMmUtNGEyYS1iZGI3LTg2MTRiZGQ2YjBiMyIsDQogICJhaWQiOiAiMCIsDQogICJzY3kiOiAiYXV0byIsDQogICJuZXQiOiAid3MiLA0KICAidHlwZSI6ICJub25lIiwNCiAgImhvc3QiOiAic2czLXYycmF5LnNzaGtpdC5vcmciLA0KICAicGF0aCI6ICIvc3Noa2l0LzE3MzY5NjAxMTEvNjM4NTliYzE3N2EzMy8iLA0KICAidGxzIjogInRscyIsDQogICJzbmkiOiAic2czLXYycmF5LnNzaGtpdC5vcmciLA0KICAiYWxwbiI6ICIiDQp9']
         # nodes_ori = 'dm1lc3M6Ly9ldzBLSUNBaWRpSTZJQ0l5SWl3TkNpQWdJbkJ6SWpvZ0lqQXlJaXdOQ2lBZ0ltRmtaQ0k2SUNJeE1EUXVNVFl1TVRVMUxqUTNJaXdOQ2lBZ0luQnZjblFpT2lBaU5EUXpJaXdOQ2lBZ0ltbGtJam9nSW1NMk56UTNaR0UwTFdaaU1tVXROR0V5WVMxaVpHSTNMVGcyTVRSaVpHUTJZakJpTXlJc0RRb2dJQ0poYVdRaU9pQWlNQ0lzRFFvZ0lDSnpZM2tpT2lBaVlYVjBieUlzRFFvZ0lDSnVaWFFpT2lBaWQzTWlMQTBLSUNBaWRIbHdaU0k2SUNKdWIyNWxJaXdOQ2lBZ0ltaHZjM1FpT2lBaWMyY3pMWFl5Y21GNUxuTnphR3RwZEM1dmNtY2lMQTBLSUNBaWNHRjBhQ0k2SUNJdmMzTm9hMmwwTHpFM016WTVOakF4TVRFdk5qTTROVGxpWXpFM04yRXpNeThpTEEwS0lDQWlkR3h6SWpvZ0luUnNjeUlzRFFvZ0lDSnpibWtpT2lBaWMyY3pMWFl5Y21GNUxuTnphR3RwZEM1dmNtY2lMQTBLSUNBaVlXeHdiaUk2SUNJaURRcDk='
         d = '%d' % (int(d) - 1)
-        
         u = f'https://clashnode.com/wp-content/uploads/{y}/{m}/{y+m+d}.txt'
         # u = f'https://nodefree.org/dy/{y+m}/{y+m+d}.txt'
         # u = f'https://raw.iqiq.io/ermaozi/get_subscribe/main/subscribe/v2ray.txt'
-        print(u)
+
+        # print(time.strftime('/%Y%m/%Y%m%d'),time.strftime('/%Y/%m/%Y%m%d'))
 
         res = s.get(u, headers=headers, proxies=proxies)
 
         text = res.text
 
         if 'https://' == text[:8]:
+            print('http')
             nodes = re.findall(r'url=(\S+)&insert=', unquote(text))[0].split('|')
             nodes_ori = base64.b64encode('\n'.join(nodes).encode(encoding='UTF-8')).decode('UTF-8')
         else:
+            print('base64')
             nodes = base64.b64decode(text.encode(encoding='UTF-8')).decode('UTF-8').split('\n')
             nodes_ori = text
             
