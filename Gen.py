@@ -50,9 +50,10 @@ if __name__ == "__main__":
         u = f'https://clashnode.com/wp-content/uploads/{y}/{m}/{y+m+d}.txt'
         # u = f'https://nodefree.org/dy/{y+m}/{y+m+d}.txt'
         # u = f'https://raw.iqiq.io/ermaozi/get_subscribe/main/subscribe/v2ray.txt'
-        u = f'https://clashnode.com/wp-content/uploads/2022/12/20221224.txt'
+        # u = f'https://clashnode.com/wp-content/uploads/2022/12/20221224.txt'
 
         # print(time.strftime('/%Y%m/%Y%m%d'),time.strftime('/%Y/%m/%Y%m%d'))
+        print(u)
 
         res = s.get(u, headers=headers, proxies=proxies)
 
@@ -76,6 +77,7 @@ if __name__ == "__main__":
         # u = f'https://raw.iqiq.io/ermaozi/get_subscribe/main/subscribe/v2ray.txt'
 
         # print(time.strftime('/%Y%m/%Y%m%d'),time.strftime('/%Y/%m/%Y%m%d'))
+        print(u)
 
         res = s.get(u, headers=headers, proxies=proxies)
 
