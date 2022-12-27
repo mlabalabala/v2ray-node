@@ -24,10 +24,10 @@ def modIP(nodes):
             if 'vmess' == pro_type:
                 node_det_json = base64.b64decode(node_det).decode('UTF-8')
                 node_det_dict = json.loads(node_det_json)
-                # node_det_dict['ps'] = 'icook.hk-%02.d' % nodes.index(node)
-                node_det_dict['ps'] = '%02.d' % nodes.index(node)
-#                 node_det_dict['add'] = 'uicdn.cf'
-                node_det_dict['add'] = 'icook.hk'
+#                 node_det_dict['ps'] = 'icook.hk-%02.d' % nodes.index(node)
+#                 node_det_dict['ps'] = '%02.d' % nodes.index(node)
+                node_det_dict['add'] = 'uicdn.cf'
+#                 node_det_dict['add'] = 'icook.hk'
 #                 node_det_dict['add'] = '104.16.245.116'
                 node_det_json = json.dumps(node_det_dict)
                 node_mod = 'vmess://'+base64.b64encode(node_det_json.encode()).decode('UTF-8')
@@ -82,4 +82,4 @@ if __name__ == "__main__":
 
     GenNodesFile(clashnode_urls, 'clashnode')
     GenNodesFile(nodefree_urls, 'nodefree')
-    GenNodesFile(other_urls, 'other')
+#     GenNodesFile(other_urls, 'other')
