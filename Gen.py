@@ -58,9 +58,9 @@ def GenNodesFile(urls, flag):
     nodes_b64_en = base64.b64encode(modIP(nodes).encode(encoding='UTF-8'))
     nodes_b64_de = nodes_b64_en.decode('UTF-8')
 
-    with open(f'{flag}_nodes_mod', 'w', encoding='UTF-8') as w:
+    with open(f'{flag}_nodes_mod.txt', 'w', encoding='UTF-8') as w:
         w.write(nodes_b64_de)
-    with open(f'{flag}_nodes_ori', 'w', encoding='UTF-8') as w:
+    with open(f'{flag}_nodes_ori.txt', 'w', encoding='UTF-8') as w:
         w.write(nodes_ori)
         
 
