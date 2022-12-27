@@ -31,6 +31,6 @@ jobs:
           author_name: GITHUB_GENERATOR
           author_email: 1842074134@qq.com
           message: "Updata"
-          add: "clashnode_nodes_mod clashnode_nodes_ori"
+          add: *
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
