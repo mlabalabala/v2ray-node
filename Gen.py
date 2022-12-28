@@ -26,6 +26,7 @@ def modIP(nodes):
                 node_det_dict = json.loads(node_det_json)
 #                 node_det_dict['ps'] = 'icook.hk-%02.d' % nodes.index(node)
 #                 node_det_dict['ps'] = '%02.d' % nodes.index(node)
+                node_det_dict['ps'] = f'{y}-{m}-{d}-' + node_det_dict['ps']
                 node_det_dict['add'] = 'uicdn.cf'
 #                 node_det_dict['add'] = 'icook.hk'
 #                 node_det_dict['add'] = '104.16.245.116'
@@ -33,7 +34,8 @@ def modIP(nodes):
                 node_mod = 'vmess://'+base64.b64encode(node_det_json.encode()).decode('UTF-8')
                 nodes_mod_list.append(node_mod)
             else:
-                node_mod = re.sub(r'#(\S+)', '#%02.d' % nodes.index(node), node, 1, re.MULTILINE)
+                # node_mod = re.sub(r'#(\S+)', '#%02.d' % nodes.index(node), node, 1, re.MULTILINE)
+                node_mod = re.sub(r'#', f'#{y}-{m}-{d}-', node, 1, re.MULTILINE)
                 nodes_mod_list.append(node_mod)
                 # print(node_mod)
     return '\n'.join(nodes_mod_list)
