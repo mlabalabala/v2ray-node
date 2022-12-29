@@ -42,11 +42,13 @@ def modIP(nodes):
 
 
 def GenNodesFile(urls, flag):
+    global d
 
     for url in urls:
         print(url)
         res = s.get(url, headers=headers, proxies=proxies)
         text = res.text
+        d = '%d' % (int(d) - urls.index(url))
         if "<html" not in text:
             break
 
