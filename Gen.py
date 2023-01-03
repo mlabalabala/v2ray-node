@@ -80,7 +80,7 @@ if __name__ == "__main__":
     clashnode_url = 'https://clashnode.com/wp-content/uploads/{}/{}/{}.txt'
     clashnode_urls = [clashnode_url.format(y, m, y+m+'%02d'%i) for i in range(int(d), 0, -1)]
 
-    nodefree_url = 'https://nodefree.org/dy/{}/{}.txt'
+    nodefree_url = 'https://nodefree.org/dy/{}/{}/{}.txt'
     nodefree_urls = [nodefree_url.format(y, m, y+m+'%02d'%i) for i in range(int(d), 0, -1)]
     
     other_urls = ['https://raw.iqiq.io/ermaozi/get_subscribe/main/subscribe/v2ray.txt']
