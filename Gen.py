@@ -57,7 +57,7 @@ def GenNodesFile(urls, flag):
         nodes = re.findall(r'url=(\S+)&insert=', unquote(text))[0].split('|')
         nodes_ori = base64.b64encode('\n'.join(nodes).encode(encoding='UTF-8')).decode('UTF-8')
     else:
-        nodes = base64.b64decode(text.encode(encoding='UTF-8')).decode('UTF-8').split('\n')
+        nodes = base64.b64decode(text).decode('UTF-8').split('\n')
         nodes_ori = text
 
     nodes_b64_en = base64.b64encode(modIP(nodes).encode(encoding='UTF-8'))
