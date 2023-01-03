@@ -1,9 +1,9 @@
 name: GEN_NODES
 
-# on: workflow_dispatch
-on:
-  schedule:
-      - cron: "0 4,10 * * *"
+on: workflow_dispatch
+# on:
+#   schedule:
+#       - cron: "0 4,10 * * *"
   
 
 jobs:
