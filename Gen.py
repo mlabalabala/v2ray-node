@@ -26,7 +26,7 @@ def modIP(nodes):
                 node_det_dict = json.loads(node_det_json)
 #                 node_det_dict['ps'] = 'icook.hk-%02.d' % nodes.index(node)
 #                 node_det_dict['ps'] = '%02.d' % nodes.index(node)
-                node_det_dict['ps'] = f'{y}-{m}-{d}-' + node_det_dict['ps']
+                node_det_dict['ps'] = f'{y}/{m}/{d}/' + node_det_dict['ps']
                 node_det_dict['add'] = 'guolicheng.cfd'
 #                 node_det_dict['add'] = '104.16.245.116'
                 node_det_json = json.dumps(node_det_dict)
