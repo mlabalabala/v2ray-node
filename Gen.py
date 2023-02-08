@@ -66,7 +66,18 @@ def GenNodesFile(urls, flag):
         w.write(nodes_b64_de)
     with open(f'{flag}_nodes_ori.txt', 'w', encoding='UTF-8') as w:
         w.write(nodes_ori)
+
         
+def GenNodes4ClashFile(urls, flag):
+    for url in urls:
+        print(url)
+        res = s.get(url, headers=headers, proxies=proxies)
+        text = res.text
+        with open(f'{flag}.txt', 'w', encoding='utf8') as w:
+            w.write(text)
+        if "<html" not in text:
+            break
+            
 
 if __name__ == "__main__":
 
@@ -87,3 +98,13 @@ if __name__ == "__main__":
     GenNodesFile(clashnode_urls, 'clashnode')
     GenNodesFile(nodefree_urls, 'nodefree')
 #     GenNodesFile(other_urls, 'other')
+
+    clashnode4clash_url = 'https://sub.back2me.cn/sub?target=clash&url=https://clashnode.com/wp-content/uploads/{}/{}/{}.txt&insert=false'
+    clashnode4clash_urls = [clashnode4clash_url.format(y, m, y+m+'%02d'%i) for i in range(int(d), 0, -1)]
+
+    nodefree4clash_url = 'https://sub.back2me.cn/sub?target=clash&url=https://nodefree.org/dy/{}/{}/{}.txt&insert=false'
+    nodefree4clash_urls = [nodefree4clash_url.format(y, m, y+m+'%02d'%i) for i in range(int(d), 0, -1)]
+
+    GenNodes4ClashFile(clashnode4clash_urls, 'clashnode4clash')
+    GenNodes4ClashFile(nodefree4clash_urls, 'nodefree4clash')
+
