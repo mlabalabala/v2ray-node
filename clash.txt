@@ -9,7 +9,6 @@ proxies:
   - {name: V2Replit-tls, server: 172.66.44.96, port: 8443, type: vmess, uuid: 0bc8c688-e142-4a64-8885-f8c7498f8a90, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: v24replit.bunnylblbblbl.eu.org, network: ws, ws-opts: {path: "/0bc8c688-e142-4a64-8885-f8c7498f8a90?ed=2048", headers: {Host: v24replit.bunnylblbblbl.eu.org}}, udp: true}
   - {name: v2doparx-tls, server: 172.66.44.96, port: 443, type: vmess, uuid: 0bc8c688-e142-4a64-8885-f8c7498f8a90, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: "/0bc8c688-e142-4a64-8885-f8c7498f8a90-vm?ed=2048", headers: {Host: bunnylblbblbl.eu.org}}, udp: true}
   - {name: v2doparx, server: 172.66.44.96, port: 8880, type: vmess, uuid: 0bc8c688-e142-4a64-8885-f8c7498f8a90, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/0bc8c688-e142-4a64-8885-f8c7498f8a90-vm?ed=2048", headers: {Host: v2doparx.bunnylblbblbl.eu.org}}, udp: true}
-  - {name: v2doparx-tls 2, server: 172.66.44.96, port: 8443, type: vmess, uuid: 0bc8c688-e142-4a64-8885-f8c7498f8a90, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: "/0bc8c688-e142-4a64-8885-f8c7498f8a90-vm?ed=2048", headers: {Host: v2doparx.bunnylblbblbl.eu.org}}, udp: true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -17,10 +16,8 @@ proxy-groups:
       - DIRECT
       - V2Replit
       - V2Replit-tls
-      - replit-repl.mlabalabala.repl.co
       - v2doparx-tls
       - v2doparx
-      - v2doparx-tls 2
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -38,10 +35,8 @@ proxy-groups:
       - 🎯 全球直连
       - V2Replit
       - V2Replit-tls
-      - replit-repl.mlabalabala.repl.co
       - v2doparx-tls
       - v2doparx
-      - v2doparx-tls 2
 rules:
  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
