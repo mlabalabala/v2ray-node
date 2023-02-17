@@ -98,11 +98,11 @@ if __name__ == "__main__":
     GenNodesFile(clashnode_urls, 'clashnode')
     GenNodesFile(nodefree_urls, 'nodefree')
 #     GenNodesFile(other_urls, 'other')
-
-    clashnode4clash_url = 'https://sub.back2me.cn/sub?target=clash&url=https://clashnode.com/wp-content/uploads/{}/{}/{}.txt&insert=false'
+# https://sub.id9.cc/sub?target=clash&url=https://clashnode.com/wp-content/uploads/2023/02/20230217.txt&insert=false&config=https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online_NoAuto.ini
+    clashnode4clash_url = 'https://sub.id9.cc/sub?target=clash&url=https://clashnode.com/wp-content/uploads/{}/{}/{}.txt&insert=false&config=https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online_NoAuto.ini'
     clashnode4clash_urls = [clashnode4clash_url.format(y, m, y+m+'%02d'%i) for i in range(int(d), 0, -1)]
 
-    nodefree4clash_url = 'https://sub.back2me.cn/sub?target=clash&url=https://nodefree.org/dy/{}/{}/{}.txt&insert=false'
+    nodefree4clash_url = 'https://sub.back2me.cn/sub?target=clash&url=https://nodefree.org/dy/{}/{}/{}.txt&insert=false&config=https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online_NoAuto.ini'
     nodefree4clash_urls = [nodefree4clash_url.format(y, m, y+m+'%02d'%i) for i in range(int(d), 0, -1)]
 
     GenNodes4ClashFile(clashnode4clash_urls, 'clashnode4clash')
