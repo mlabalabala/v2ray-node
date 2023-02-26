@@ -5,386 +5,386 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: _JP_日本, server: agroup.node1.t.nodelist-gfwairport1.download, port: 50001, type: trojan, password: 26188b3e-c28e-4230-8bee-53d77ff5ff49, skip-cert-verify: true, udp: true}
-  - {name: _CN_中国->🇹🇼_TW_台湾, server: 120.226.39.25, port: 19212, type: trojan, password: 0b2d98a4-25bc-3d9f-9694-9d1e929de8dd, skip-cert-verify: true, udp: true}
-  - {name: _JP_日本 2, server: 00000000000000000000000000000000000000000000000000000000000004a.node-for-bigairport.win, port: 443, type: vmess, uuid: 78065c14-fc80-40b5-a46c-0e34efdf82fa, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _CN_中国->🇰🇷_KR_韩国, server: v01.gutingting.com, port: 30056, type: trojan, password: 61c6ceee-ee4f-475f-867d-dcfda15490fb, sni: v1kr01.fuqiangren.com, skip-cert-verify: true, udp: true}
-  - {name: _US_美国, server: 172.67.203.162, port: 443, type: vmess, uuid: c5a2d7b8-bf84-4f97-8577-b9b87f2baaf7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /AUIKN8AU, headers: {Host: oplg1.cfcdn2.xyz}}, udp: true}
-  - {name: _BZ_伯利兹, server: 203.30.191.7, port: 443, type: vmess, uuid: c5a2d7b8-bf84-4f97-8577-b9b87f2baaf7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /AUIKN8AU, headers: {Host: oplg1.cfcdn2.xyz}}, udp: true}
-  - {name: _US_美国->🇯🇵_JP_日本, server: 162.159.58.88, port: 80, type: vmess, uuid: a406b612-26f7-4bf0-8652-816970a1c122, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: jp.6577617.xyz}}, udp: true}
-  - {name: _CN_中国->🇺🇸_US_美国, server: 120.226.39.25, port: 19240, type: trojan, password: 0b2d98a4-25bc-3d9f-9694-9d1e929de8dd, skip-cert-verify: true, udp: true}
-  - {name: _US_美国->🇮🇳_IN_印度, server: 103.21.244.180, port: 8443, type: vmess, uuid: a6a37e04-5e81-44c9-be53-baa3ff46eb8b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /8cda48b3, headers: {Host: IN-92-99.shoptunnel.live}}, udp: true}
-  - {name: _US_美国 2, server: 172.67.145.166, port: 443, type: vmess, uuid: c5a2d7b8-bf84-4f97-8577-b9b87f2baaf7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /AUIKN8AU, headers: {Host: oplg1.cfcdn2.xyz}}, udp: true}
-  - {name: _FR_法国->🇮🇳_IN_印度, server: 173.245.49.57, port: 8443, type: vmess, uuid: a6a37e04-5e81-44c9-be53-baa3ff46eb8b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /8cda48b3, headers: {Host: IN-92-99.shoptunnel.live}}, udp: true}
-  - {name: _US_美国->🇮🇳_IN_印度 2, server: 103.21.244.82, port: 8443, type: vmess, uuid: a6a37e04-5e81-44c9-be53-baa3ff46eb8b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /8cda48b3, headers: {Host: IN-92-99.shoptunnel.live}}, udp: true}
-  - {name: _US_美国->🇮🇳_IN_印度 3, server: 172.67.27.213, port: 8443, type: vmess, uuid: a6a37e04-5e81-44c9-be53-baa3ff46eb8b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /8cda48b3, headers: {Host: IN-92-99.shoptunnel.live}}, udp: true}
-  - {name: _US_美国 3, server: 103.21.244.195, port: 443, type: vmess, uuid: 40d496a6-ceeb-4096-baeb-4cc52b205621, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ECTCJ0DF, headers: {Host: lg1.trump2023.us}}, udp: true}
-  - {name: _BZ_伯利兹->🇺🇸_US_美国, server: 203.30.188.121, port: 443, type: vmess, uuid: c5a2d7b8-bf84-4f97-8577-b9b87f2baaf7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /AUIKN8AU, headers: {Host: oplg1.cfcdn2.xyz}}, udp: true}
-  - {name: _US_美国 4, server: phxv001.jd0001.top, port: 44302, type: trojan, password: 4d111af8-5078-37e0-a583-34155f60b32c, skip-cert-verify: true, udp: true}
-  - {name: _US_美国->🇰🇭_KH_柬埔寨, server: cf-lt-dns.sharecentre.online, port: 443, type: vmess, uuid: 20e92881-5fb4-4b05-bc77-57929476dc69, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: kh.sharecentre.online}}, udp: true}
-  - {name: _US_美国 5, server: 34.145.145.76, port: 443, type: vmess, uuid: 5f64fa65-7b14-49c5-954d-aa15c6bfcacd, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: _US_美国->🇫🇷_FR_法国, server: lg10.cfcdn1.xyz, port: 443, type: vmess, uuid: 17b2a313-37a0-4945-a8e4-e63375506b4a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: lg10.cfcdn1.xyz}}, udp: true}
-  - {name: _US_美国 6, server: vus5.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: vus5.0bad.com}}, udp: true}
-  - {name: _US_美国->🇮🇳_IN_印度 4, server: 103.21.244.107, port: 8443, type: vmess, uuid: a6a37e04-5e81-44c9-be53-baa3ff46eb8b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /8cda48b3, headers: {Host: IN-92-99.shoptunnel.live}}, udp: true}
-  - {name: _CN_中国, server: 120.226.39.25, port: 19231, type: trojan, password: 0b2d98a4-25bc-3d9f-9694-9d1e929de8dd, skip-cert-verify: true, udp: true}
+  - {name: _JP_日本, server: 3.112.246.87, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: _CN_中国->🇯🇵_JP_日本, server: v02.gutingting.com, port: 30054, type: trojan, password: 9c5715ad-6c94-4c14-9d06-69f1da7e0a66, sni: v1jp01.fuqiangren.com, skip-cert-verify: true, udp: true}
+  - {name: _CN_中国->🇯🇵_JP_日本 2, server: v01.gutingting.com, port: 20221, type: trojan, password: 83f4f6cf-797a-423b-a2e8-a4d4ef286758, sni: v2jp01.fuqiangren.com, skip-cert-verify: true, udp: true}
+  - {name: _CN_中国->🇯🇵_JP_日本 3, server: v01.gutingting.com, port: 20220, type: trojan, password: 39196f9b-4d13-4e3f-b8fb-cdf6c4455a02, sni: v2jp01.fuqiangren.com, skip-cert-verify: true, udp: true}
+  - {name: _HK_香港, server: hk1.b.bd6b6c503c93.sanfen001.pics, port: 443, type: vmess, uuid: b10abf21-761e-41bb-a45b-f07aea5101b9, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: hk1.b.bd6b6c503c93.sanfen001.pics}}, udp: true}
+  - {name: _US_美国, server: 144.34.175.46, port: 80, type: vmess, uuid: 751192f4-437e-4ea9-f34f-4f0252509267, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: _SG_新加坡, server: 54.179.221.54, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: _CN_中国->🇸🇬_SG_新加坡, server: v01.gutingting.com, port: 30050, type: trojan, password: 1537b799-e78f-4315-9f91-1553d5fef34f, sni: v2sg02.fuqiangren.com, skip-cert-verify: true, udp: true}
+  - {name: _US_美国 2, server: ovh-3.555530.xyz, port: 443, type: vmess, uuid: c5a2d7b8-bf84-4f97-8577-b9b87f2baaf7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /AUIKN8AU, headers: {Host: oplg1.cfcdn2.xyz}}, udp: true}
+  - {name: _US_美国 3, server: 104.233.191.182, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: _JP_日本 2, server: vjp3.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: vjp3.0bad.com}}, udp: true}
+  - {name: _FR_法国->🇮🇳_IN_印度, server: 173.245.49.10, port: 8443, type: vmess, uuid: a6a37e04-5e81-44c9-be53-baa3ff46eb8b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /8cda48b3, headers: {Host: IN-92-99.shoptunnel.live}}, udp: true}
+  - {name: _US_美国->🇮🇳_IN_印度, server: 103.21.244.227, port: 8443, type: vmess, uuid: a6a37e04-5e81-44c9-be53-baa3ff46eb8b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /8cda48b3, headers: {Host: IN-92-99.shoptunnel.live}}, udp: true}
+  - {name: _US_美国 4, server: 129.146.113.254, port: 43121, type: vmess, uuid: d53b39e2-925e-45b6-9389-46b9fa95878b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: _CN_中国, server: 47.104.237.32, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _FR_法国->🇮🇳_IN_印度 2, server: 173.245.49.113, port: 8443, type: vmess, uuid: a6a37e04-5e81-44c9-be53-baa3ff46eb8b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /8cda48b3, headers: {Host: IN-92-99.shoptunnel.live}}, udp: true}
+  - {name: _JP_日本 3, server: vjp2.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: vjp2.0bad.com}}, udp: true}
+  - {name: _CN_中国 2, server: 112.132.215.189, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _US_美国->🇮🇳_IN_印度 2, server: 103.21.244.70, port: 8443, type: vmess, uuid: a6a37e04-5e81-44c9-be53-baa3ff46eb8b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /8cda48b3, headers: {Host: IN-92-99.shoptunnel.live}}, udp: true}
+  - {name: _US_美国->🇩🇪_DE_德国, server: cf.bakapie.cf, port: 2096, type: vmess, uuid: b4066c72-3e5b-41d0-90da-41ba2e6d7457, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /index, headers: {Host: 3464a64e.adorc.ml}}, udp: true}
+  - {name: _US_美国 5, server: lu.sharecentre.online, port: 443, type: vmess, uuid: 20e92881-5fb4-4b05-bc77-57929476dc69, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: lu.sharecentre.online}}, udp: true}
+  - {name: _US_美国->🇮🇳_IN_印度 3, server: 103.21.244.180, port: 8443, type: vmess, uuid: a6a37e04-5e81-44c9-be53-baa3ff46eb8b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /8cda48b3, headers: {Host: IN-92-99.shoptunnel.live}}, udp: true}
+  - {name: _US_美国->🇫🇷_FR_法国, server: 66.235.200.22, port: 443, type: vmess, uuid: 17b2a313-37a0-4945-a8e4-e63375506b4a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /A2DJOPFT, headers: {Host: lg10.cfcdn1.xyz}}, udp: true}
+  - {name: _JP_日本 4, server: www.wyca.ga, port: 443, type: vmess, uuid: d394b3e5-abc2-444f-8f2c-74eb8e4dc6ec, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: www.wyca.ga}}, udp: true}
+  - {name: _US_美国 6, server: vus2.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: vus2.0bad.com}}, udp: true}
   - {name: _US_美国 7, server: 172.67.217.89, port: 8443, type: vmess, uuid: a6a37e04-5e81-44c9-be53-baa3ff46eb8b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /8cda48b3, headers: {Host: IN-92-99.shoptunnel.live}}, udp: true}
-  - {name: _CA_加拿大, server: 168.138.68.36, port: 14252, type: vmess, uuid: 52768552-c2b2-4460-89f1-e740cc145b99, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /ws-path, headers: {Host: 168.138.68.36}}, udp: true}
-  - {name: _US_美国->🇵🇱_PL_波兰, server: cf.fovi.tk, port: 2053, type: vmess, uuid: bf67437e-6c90-45ca-abc2-c7240a5ce2aa, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /eisasqa, headers: {Host: foxpol.fovi.tk}}, udp: true}
-  - {name: _KR_韩国, server: 152.67.218.216, port: 17992, type: vmess, uuid: 52768552-c2b2-4460-89f1-e740cc145b99, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: _US_美国 8, server: phxv001.jd0001.top, port: 4431, type: vmess, uuid: 6abfad5a-24be-3657-85da-ceac782b7e19, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: phxv001.jd0001.top}}, udp: true}
-  - {name: _CN_中国->🇻🇳_VN_越南, server: v02.gutingting.com, port: 30051, type: trojan, password: 015c137f-7067-4a12-b47a-be88ff5aa612, sni: v2vn01.fuqiangren.com, skip-cert-verify: true, udp: true}
-  - {name: _US_美国->🇮🇳_IN_印度 5, server: 103.21.244.230, port: 8443, type: vmess, uuid: a6a37e04-5e81-44c9-be53-baa3ff46eb8b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /8cda48b3, headers: {Host: IN-92-99.shoptunnel.live}}, udp: true}
-  - {name: _CA_加拿大 2, server: 51.161.35.200, port: 443, type: vmess, uuid: 9ec0fa0b-c50d-4ddf-a2d2-c98298641e96, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: _US_美国 9, server: 172.67.115.249, port: 8443, type: vmess, uuid: a6a37e04-5e81-44c9-be53-baa3ff46eb8b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /8cda48b3, headers: {Host: IN-92-99.shoptunnel.live}}, udp: true}
-  - {name: _US_美国->🇫🇷_FR_法国 2, server: 172.67.199.34, port: 443, type: vmess, uuid: 2b214122-1906-428a-bbb7-a039cbb7cd5c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /9JZFDTKE, headers: {Host: fr1.trump2023.org}}, udp: true}
-  - {name: _FI_芬兰, server: 65.109.184.152, port: 443, type: vmess, uuid: 5cf836c8-bb7d-4eac-f0ee-bc721fb7453b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: _HK_香港, server: 8.218.95.203, port: 61018, type: vmess, uuid: ade9e193-f710-4851-b287-cba895507345, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
-  - {name: _US_美国 10, server: v47a.toddns.tk, port: 80, type: vmess, uuid: a25881f3-967f-3265-bc7f-9e66857b016b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /v47-2023unlimitndxd, headers: {Host: v47a.toddns.tk}}, udp: true}
-  - {name: _JP_日本 3, server: osav101.jd0001.top, port: 4430, type: vmess, uuid: 6abfad5a-24be-3657-85da-ceac782b7e19, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: osav101.jd0001.top}}, udp: true}
-  - {name: _KR_韩国 2, server: 13.124.119.204, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: _US_美国->🇫🇷_FR_法国 3, server: eu-3.youngns.ml, port: 443, type: vmess, uuid: df69bf7b-7ad5-44d3-a4f0-203f347ed9d0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: eu-3.youngns.ml}}, udp: true}
-  - {name: _CA_加拿大 3, server: 51.161.118.38, port: 800, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
-  - {name: _HK_香港 2, server: 8.218.7.81, port: 25346, type: vmess, uuid: 2f82e36d-635a-41eb-ac60-7d50fb8fd50c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
-  - {name: _US_美国 11, server: hax-us4.sudoxin.tk, port: 443, type: vmess, uuid: c8e0f808-25d6-4911-833e-50b9f5050ba6, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /c8e0f808-25d6-4911-833e-50b9f5050ba6, headers: {Host: hax-us4.sudoxin.tk}}, udp: true}
-  - {name: _CN_中国->🇯🇵_JP_日本, server: 42.157.195.246, port: 12127, type: ssr, cipher: aes-256-cfb, password: 68xdgu9eyif, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 0f099600777.v23f7nM0, obfs-param: 0f099600777.v23f7nM0, udp: true}
-  - {name: _CN_中国->🇺🇸_US_美国 2, server: 42.157.195.234, port: 12127, type: ssr, cipher: aes-256-cfb, password: 68xdgu9eyif, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 0f099600777.v23f7nM0, obfs-param: 0f099600777.v23f7nM0, udp: true}
-  - {name: _CA_加拿大 4, server: 51.161.118.38, port: 808, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
-  - {name: _JP_日本 4, server: 00000000000000000000000000000000000000000000000000000000000024a.node-for-bigairport.win, port: 52356, type: vmess, uuid: 78065c14-fc80-40b5-a46c-0e34efdf82fa, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _FR_法国, server: 51.91.248.209, port: 10000, type: vmess, uuid: ff7c5648-b275-11ed-8842-2f75954514f8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /vpnjantit}, udp: true}
-  - {name: _KR_韩国 3, server: 131.186.24.103, port: 443, type: vmess, uuid: 6093eefb-7ab6-41df-aba0-d5fa58147e10, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: _US_美国 12, server: us-dp.sharecentre.online, port: 443, type: vmess, uuid: 20e92881-5fb4-4b05-bc77-57929476dc69, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: us-dp.sharecentre.online}}, udp: true}
-  - {name: _HK_香港 3, server: 8.210.117.166, port: 45551, type: vmess, uuid: 3cdc9bff-5fe7-4e49-9cd7-340b0e445237, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
-  - {name: _CN_中国->🇭🇰_HK_香港, server: hnm.xiaohouzi.club, port: 49363, type: trojan, password: 0f098bb2-9fad-3cc3-8acf-2a3268c1eb27, sni: hnm.xiaohouzi.club, skip-cert-verify: true, udp: true}
+  - {name: _DE_德国, server: de-ls03.nb1.fr, port: 64443, type: vmess, uuid: cb7001c7-e495-41ac-b942-f25f60523414, alterId: 1, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: de-ls03.nb1.fr}}, udp: true}
+  - {name: _GB_英国, server: 51.38.71.175, port: 80, type: trojan, password: 211f5876-8c89-4d97-9004-ff16acddd506, sni: $$uk1.trojanvh.xyz, skip-cert-verify: true, udp: true}
+  - {name: _US_美国 8, server: us-dp.sharecentre.online, port: 443, type: vmess, uuid: 20e92881-5fb4-4b05-bc77-57929476dc69, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: us-dp.sharecentre.online}}, udp: true}
+  - {name: _HK_香港 2, server: 8.218.94.25, port: 48288, type: vmess, uuid: 1c3ea2bd-4056-4dae-b0f8-e1737217c6e4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
+  - {name: _US_美国 9, server: 198.41.203.6, port: 443, type: vmess, uuid: 2b214122-1906-428a-bbb7-a039cbb7cd5c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /9JZFDTKE, headers: {Host: fr1.trump2023.org}}, udp: true}
+  - {name: _SG_新加坡 2, server: sg-ovh2.1server.co, port: 8080, type: vmess, uuid: 397489e0-a0b4-11ed-b443-1577c1651679, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: sg-ovh2.1server.co}}, udp: true}
+  - {name: _US_美国 10, server: 51.81.202.62, port: 80, type: vmess, uuid: a25881f3-967f-3265-bc7f-9e66857b016b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /v47-2023unlimitndxd}, udp: true}
+  - {name: _HK_香港 3, server: 8.218.94.239, port: 61725, type: vmess, uuid: b7eef349-730f-4b56-b0e6-8e58e3e968c3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
+  - {name: _KR_韩国, server: 2.hg.kr.cat77.cloud, port: 8443, type: trojan, password: cd27884b-c5af-34ec-b75f-8248077818fe, skip-cert-verify: true, udp: true}
+  - {name: _US_美国 11, server: fr1.trump2023.org, port: 443, type: vmess, uuid: 2b214122-1906-428a-bbb7-a039cbb7cd5c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /9JZFDTKE, headers: {Host: fr1.trump2023.org}}, udp: true}
+  - {name: _GB_英国 2, server: gb-ls03.nb1.fr, port: 64443, type: vmess, uuid: cb7001c7-e495-41ac-b942-f25f60523414, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: gb-ls03.nb1.fr}}, udp: true}
+  - {name: _US_美国 12, server: 46.3.82.31, port: 443, type: vmess, uuid: d23239a4-36b9-404e-bb70-85d5d5f3fae7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: _FR_法国, server: 173.245.49.55, port: 8443, type: vmess, uuid: a6a37e04-5e81-44c9-be53-baa3ff46eb8b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /8cda48b3, headers: {Host: IN-92-99.shoptunnel.live}}, udp: true}
+  - {name: _TW_台湾, server: tw2.sanfen001.pics, port: 443, type: vmess, uuid: b10abf21-761e-41bb-a45b-f07aea5101b9, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: _SG_新加坡 3, server: 143.198.219.182, port: 80, type: vmess, uuid: e9c4ce52-9a78-4381-b6f8-23350bc4d606, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: _US_美国->🇮🇳_IN_印度 4, server: 172.67.174.51, port: 8443, type: vmess, uuid: a6a37e04-5e81-44c9-be53-baa3ff46eb8b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /8cda48b3, headers: {Host: IN-92-99.shoptunnel.live}}, udp: true}
+  - {name: _JP_日本 5, server: 138.2.45.89, port: 44301, type: trojan, password: 6d64570c-81d4-30fa-b2e2-dce73e1a2702, sni: osav101.jd0001.top, skip-cert-verify: true, udp: true}
+  - {name: _FR_法国 2, server: 173.245.49.111, port: 8443, type: vmess, uuid: a6a37e04-5e81-44c9-be53-baa3ff46eb8b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /8cda48b3, headers: {Host: IN-92-99.shoptunnel.live}}, udp: true}
+  - {name: _HK_香港 4, server: 8.218.58.199, port: 44200, type: vmess, uuid: 815705a3-056e-4dbd-86c0-25d212144365, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
+  - {name: _CN_中国->🇭🇰_HK_香港, server: v01.gutingting.com, port: 30005, type: trojan, password: 26e11970-d733-4321-9dc9-07d9b33cc428, sni: v2hgc01.fuqiangren.com, skip-cert-verify: true, udp: true}
+  - {name: _CN_中国 3, server: 42.157.195.234, port: 12127, type: ssr, cipher: aes-256-cfb, password: 68xdgu9eyif, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 0f099600777.v23f7nM0, obfs-param: 0f099600777.v23f7nM0, udp: true}
+  - {name: _US_美国 13, server: hax-us4.sudoxin.tk, port: 443, type: vmess, uuid: c8e0f808-25d6-4911-833e-50b9f5050ba6, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /c8e0f808-25d6-4911-833e-50b9f5050ba6, headers: {Host: hax-us4.sudoxin.tk}}, udp: true}
+  - {name: _US_美国 14, server: khvwycch.cymlr.xyz, port: 443, type: vmess, uuid: db39ef95-4245-418a-84c0-14c202f29bc6, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: khvwycch.cymlr.xyz}}, udp: true}
+  - {name: _MO_澳门->🇸🇬_SG_新加坡, server: 45.64.22.56, port: 443, type: trojan, password: !<str> 123456, sni: trojan-ctb-sg01.globalssh.xyz, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - DIRECT
       - _JP_日本
-      - _CN_中国->🇹🇼_TW_台湾
-      - _JP_日本 2
-      - _CN_中国->🇰🇷_KR_韩国
-      - _US_美国
-      - _BZ_伯利兹
-      - _US_美国->🇯🇵_JP_日本
-      - _CN_中国->🇺🇸_US_美国
-      - _US_美国->🇮🇳_IN_印度
-      - _US_美国 2
-      - _FR_法国->🇮🇳_IN_印度
-      - _US_美国->🇮🇳_IN_印度 2
-      - _US_美国->🇮🇳_IN_印度 3
-      - _US_美国 3
-      - _BZ_伯利兹->🇺🇸_US_美国
-      - _US_美国 4
-      - _US_美国->🇰🇭_KH_柬埔寨
-      - _US_美国 5
-      - _US_美国->🇫🇷_FR_法国
-      - _US_美国 6
-      - _US_美国->🇮🇳_IN_印度 4
-      - _CN_中国
-      - _US_美国 7
-      - _CA_加拿大
-      - _US_美国->🇵🇱_PL_波兰
-      - _KR_韩国
-      - _US_美国 8
-      - _CN_中国->🇻🇳_VN_越南
-      - _US_美国->🇮🇳_IN_印度 5
-      - _CA_加拿大 2
-      - _US_美国 9
-      - _US_美国->🇫🇷_FR_法国 2
-      - _FI_芬兰
-      - _HK_香港
-      - _US_美国 10
-      - _JP_日本 3
-      - _KR_韩国 2
-      - _US_美国->🇫🇷_FR_法国 3
-      - _CA_加拿大 3
-      - _HK_香港 2
-      - _US_美国 11
       - _CN_中国->🇯🇵_JP_日本
-      - _CN_中国->🇺🇸_US_美国 2
-      - _CA_加拿大 4
+      - _CN_中国->🇯🇵_JP_日本 2
+      - _CN_中国->🇯🇵_JP_日本 3
+      - _HK_香港
+      - _US_美国
+      - _SG_新加坡
+      - _CN_中国->🇸🇬_SG_新加坡
+      - _US_美国 2
+      - _US_美国 3
+      - _JP_日本 2
+      - _FR_法国->🇮🇳_IN_印度
+      - _US_美国->🇮🇳_IN_印度
+      - _US_美国 4
+      - _CN_中国
+      - _FR_法国->🇮🇳_IN_印度 2
+      - _JP_日本 3
+      - _CN_中国 2
+      - _US_美国->🇮🇳_IN_印度 2
+      - _US_美国->🇩🇪_DE_德国
+      - _US_美国 5
+      - _US_美国->🇮🇳_IN_印度 3
+      - _US_美国->🇫🇷_FR_法国
       - _JP_日本 4
-      - _FR_法国
-      - _KR_韩国 3
-      - _US_美国 12
+      - _US_美国 6
+      - _US_美国 7
+      - _DE_德国
+      - _GB_英国
+      - _US_美国 8
+      - _HK_香港 2
+      - _US_美国 9
+      - _SG_新加坡 2
+      - _US_美国 10
       - _HK_香港 3
+      - _KR_韩国
+      - _US_美国 11
+      - _GB_英国 2
+      - _US_美国 12
+      - _FR_法国
+      - _TW_台湾
+      - _SG_新加坡 3
+      - _US_美国->🇮🇳_IN_印度 4
+      - _JP_日本 5
+      - _FR_法国 2
+      - _HK_香港 4
       - _CN_中国->🇭🇰_HK_香港
+      - _CN_中国 3
+      - _US_美国 13
+      - _US_美国 14
+      - _MO_澳门->🇸🇬_SG_新加坡
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - _JP_日本
-      - _CN_中国->🇹🇼_TW_台湾
-      - _JP_日本 2
-      - _CN_中国->🇰🇷_KR_韩国
-      - _US_美国
-      - _BZ_伯利兹
-      - _US_美国->🇯🇵_JP_日本
-      - _CN_中国->🇺🇸_US_美国
-      - _US_美国->🇮🇳_IN_印度
-      - _US_美国 2
-      - _FR_法国->🇮🇳_IN_印度
-      - _US_美国->🇮🇳_IN_印度 2
-      - _US_美国->🇮🇳_IN_印度 3
-      - _US_美国 3
-      - _BZ_伯利兹->🇺🇸_US_美国
-      - _US_美国 4
-      - _US_美国->🇰🇭_KH_柬埔寨
-      - _US_美国 5
-      - _US_美国->🇫🇷_FR_法国
-      - _US_美国 6
-      - _US_美国->🇮🇳_IN_印度 4
-      - _CN_中国
-      - _US_美国 7
-      - _CA_加拿大
-      - _US_美国->🇵🇱_PL_波兰
-      - _KR_韩国
-      - _US_美国 8
-      - _CN_中国->🇻🇳_VN_越南
-      - _US_美国->🇮🇳_IN_印度 5
-      - _CA_加拿大 2
-      - _US_美国 9
-      - _US_美国->🇫🇷_FR_法国 2
-      - _FI_芬兰
-      - _HK_香港
-      - _US_美国 10
-      - _JP_日本 3
-      - _KR_韩国 2
-      - _US_美国->🇫🇷_FR_法国 3
-      - _CA_加拿大 3
-      - _HK_香港 2
-      - _US_美国 11
       - _CN_中国->🇯🇵_JP_日本
-      - _CN_中国->🇺🇸_US_美国 2
-      - _CA_加拿大 4
+      - _CN_中国->🇯🇵_JP_日本 2
+      - _CN_中国->🇯🇵_JP_日本 3
+      - _HK_香港
+      - _US_美国
+      - _SG_新加坡
+      - _CN_中国->🇸🇬_SG_新加坡
+      - _US_美国 2
+      - _US_美国 3
+      - _JP_日本 2
+      - _FR_法国->🇮🇳_IN_印度
+      - _US_美国->🇮🇳_IN_印度
+      - _US_美国 4
+      - _CN_中国
+      - _FR_法国->🇮🇳_IN_印度 2
+      - _JP_日本 3
+      - _CN_中国 2
+      - _US_美国->🇮🇳_IN_印度 2
+      - _US_美国->🇩🇪_DE_德国
+      - _US_美国 5
+      - _US_美国->🇮🇳_IN_印度 3
+      - _US_美国->🇫🇷_FR_法国
       - _JP_日本 4
-      - _FR_法国
-      - _KR_韩国 3
-      - _US_美国 12
+      - _US_美国 6
+      - _US_美国 7
+      - _DE_德国
+      - _GB_英国
+      - _US_美国 8
+      - _HK_香港 2
+      - _US_美国 9
+      - _SG_新加坡 2
+      - _US_美国 10
       - _HK_香港 3
+      - _KR_韩国
+      - _US_美国 11
+      - _GB_英国 2
+      - _US_美国 12
+      - _FR_法国
+      - _TW_台湾
+      - _SG_新加坡 3
+      - _US_美国->🇮🇳_IN_印度 4
+      - _JP_日本 5
+      - _FR_法国 2
+      - _HK_香港 4
       - _CN_中国->🇭🇰_HK_香港
+      - _CN_中国 3
+      - _US_美国 13
+      - _US_美国 14
+      - _MO_澳门->🇸🇬_SG_新加坡
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - _JP_日本
-      - _CN_中国->🇹🇼_TW_台湾
-      - _JP_日本 2
-      - _CN_中国->🇰🇷_KR_韩国
-      - _US_美国
-      - _BZ_伯利兹
-      - _US_美国->🇯🇵_JP_日本
-      - _CN_中国->🇺🇸_US_美国
-      - _US_美国->🇮🇳_IN_印度
-      - _US_美国 2
-      - _FR_法国->🇮🇳_IN_印度
-      - _US_美国->🇮🇳_IN_印度 2
-      - _US_美国->🇮🇳_IN_印度 3
-      - _US_美国 3
-      - _BZ_伯利兹->🇺🇸_US_美国
-      - _US_美国 4
-      - _US_美国->🇰🇭_KH_柬埔寨
-      - _US_美国 5
-      - _US_美国->🇫🇷_FR_法国
-      - _US_美国 6
-      - _US_美国->🇮🇳_IN_印度 4
-      - _CN_中国
-      - _US_美国 7
-      - _CA_加拿大
-      - _US_美国->🇵🇱_PL_波兰
-      - _KR_韩国
-      - _US_美国 8
-      - _CN_中国->🇻🇳_VN_越南
-      - _US_美国->🇮🇳_IN_印度 5
-      - _CA_加拿大 2
-      - _US_美国 9
-      - _US_美国->🇫🇷_FR_法国 2
-      - _FI_芬兰
-      - _HK_香港
-      - _US_美国 10
-      - _JP_日本 3
-      - _KR_韩国 2
-      - _US_美国->🇫🇷_FR_法国 3
-      - _CA_加拿大 3
-      - _HK_香港 2
-      - _US_美国 11
       - _CN_中国->🇯🇵_JP_日本
-      - _CN_中国->🇺🇸_US_美国 2
-      - _CA_加拿大 4
+      - _CN_中国->🇯🇵_JP_日本 2
+      - _CN_中国->🇯🇵_JP_日本 3
+      - _HK_香港
+      - _US_美国
+      - _SG_新加坡
+      - _CN_中国->🇸🇬_SG_新加坡
+      - _US_美国 2
+      - _US_美国 3
+      - _JP_日本 2
+      - _FR_法国->🇮🇳_IN_印度
+      - _US_美国->🇮🇳_IN_印度
+      - _US_美国 4
+      - _CN_中国
+      - _FR_法国->🇮🇳_IN_印度 2
+      - _JP_日本 3
+      - _CN_中国 2
+      - _US_美国->🇮🇳_IN_印度 2
+      - _US_美国->🇩🇪_DE_德国
+      - _US_美国 5
+      - _US_美国->🇮🇳_IN_印度 3
+      - _US_美国->🇫🇷_FR_法国
       - _JP_日本 4
-      - _FR_法国
-      - _KR_韩国 3
-      - _US_美国 12
+      - _US_美国 6
+      - _US_美国 7
+      - _DE_德国
+      - _GB_英国
+      - _US_美国 8
+      - _HK_香港 2
+      - _US_美国 9
+      - _SG_新加坡 2
+      - _US_美国 10
       - _HK_香港 3
+      - _KR_韩国
+      - _US_美国 11
+      - _GB_英国 2
+      - _US_美国 12
+      - _FR_法国
+      - _TW_台湾
+      - _SG_新加坡 3
+      - _US_美国->🇮🇳_IN_印度 4
+      - _JP_日本 5
+      - _FR_法国 2
+      - _HK_香港 4
       - _CN_中国->🇭🇰_HK_香港
+      - _CN_中国 3
+      - _US_美国 13
+      - _US_美国 14
+      - _MO_澳门->🇸🇬_SG_新加坡
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
       - _JP_日本
-      - _CN_中国->🇹🇼_TW_台湾
-      - _JP_日本 2
-      - _CN_中国->🇰🇷_KR_韩国
-      - _US_美国
-      - _BZ_伯利兹
-      - _US_美国->🇯🇵_JP_日本
-      - _CN_中国->🇺🇸_US_美国
-      - _US_美国->🇮🇳_IN_印度
-      - _US_美国 2
-      - _FR_法国->🇮🇳_IN_印度
-      - _US_美国->🇮🇳_IN_印度 2
-      - _US_美国->🇮🇳_IN_印度 3
-      - _US_美国 3
-      - _BZ_伯利兹->🇺🇸_US_美国
-      - _US_美国 4
-      - _US_美国->🇰🇭_KH_柬埔寨
-      - _US_美国 5
-      - _US_美国->🇫🇷_FR_法国
-      - _US_美国 6
-      - _US_美国->🇮🇳_IN_印度 4
-      - _CN_中国
-      - _US_美国 7
-      - _CA_加拿大
-      - _US_美国->🇵🇱_PL_波兰
-      - _KR_韩国
-      - _US_美国 8
-      - _CN_中国->🇻🇳_VN_越南
-      - _US_美国->🇮🇳_IN_印度 5
-      - _CA_加拿大 2
-      - _US_美国 9
-      - _US_美国->🇫🇷_FR_法国 2
-      - _FI_芬兰
-      - _HK_香港
-      - _US_美国 10
-      - _JP_日本 3
-      - _KR_韩国 2
-      - _US_美国->🇫🇷_FR_法国 3
-      - _CA_加拿大 3
-      - _HK_香港 2
-      - _US_美国 11
       - _CN_中国->🇯🇵_JP_日本
-      - _CN_中国->🇺🇸_US_美国 2
-      - _CA_加拿大 4
+      - _CN_中国->🇯🇵_JP_日本 2
+      - _CN_中国->🇯🇵_JP_日本 3
+      - _HK_香港
+      - _US_美国
+      - _SG_新加坡
+      - _CN_中国->🇸🇬_SG_新加坡
+      - _US_美国 2
+      - _US_美国 3
+      - _JP_日本 2
+      - _FR_法国->🇮🇳_IN_印度
+      - _US_美国->🇮🇳_IN_印度
+      - _US_美国 4
+      - _CN_中国
+      - _FR_法国->🇮🇳_IN_印度 2
+      - _JP_日本 3
+      - _CN_中国 2
+      - _US_美国->🇮🇳_IN_印度 2
+      - _US_美国->🇩🇪_DE_德国
+      - _US_美国 5
+      - _US_美国->🇮🇳_IN_印度 3
+      - _US_美国->🇫🇷_FR_法国
       - _JP_日本 4
-      - _FR_法国
-      - _KR_韩国 3
-      - _US_美国 12
+      - _US_美国 6
+      - _US_美国 7
+      - _DE_德国
+      - _GB_英国
+      - _US_美国 8
+      - _HK_香港 2
+      - _US_美国 9
+      - _SG_新加坡 2
+      - _US_美国 10
       - _HK_香港 3
+      - _KR_韩国
+      - _US_美国 11
+      - _GB_英国 2
+      - _US_美国 12
+      - _FR_法国
+      - _TW_台湾
+      - _SG_新加坡 3
+      - _US_美国->🇮🇳_IN_印度 4
+      - _JP_日本 5
+      - _FR_法国 2
+      - _HK_香港 4
       - _CN_中国->🇭🇰_HK_香港
+      - _CN_中国 3
+      - _US_美国 13
+      - _US_美国 14
+      - _MO_澳门->🇸🇬_SG_新加坡
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - _JP_日本
-      - _CN_中国->🇹🇼_TW_台湾
-      - _JP_日本 2
-      - _CN_中国->🇰🇷_KR_韩国
-      - _US_美国
-      - _BZ_伯利兹
-      - _US_美国->🇯🇵_JP_日本
-      - _CN_中国->🇺🇸_US_美国
-      - _US_美国->🇮🇳_IN_印度
-      - _US_美国 2
-      - _FR_法国->🇮🇳_IN_印度
-      - _US_美国->🇮🇳_IN_印度 2
-      - _US_美国->🇮🇳_IN_印度 3
-      - _US_美国 3
-      - _BZ_伯利兹->🇺🇸_US_美国
-      - _US_美国 4
-      - _US_美国->🇰🇭_KH_柬埔寨
-      - _US_美国 5
-      - _US_美国->🇫🇷_FR_法国
-      - _US_美国 6
-      - _US_美国->🇮🇳_IN_印度 4
-      - _CN_中国
-      - _US_美国 7
-      - _CA_加拿大
-      - _US_美国->🇵🇱_PL_波兰
-      - _KR_韩国
-      - _US_美国 8
-      - _CN_中国->🇻🇳_VN_越南
-      - _US_美国->🇮🇳_IN_印度 5
-      - _CA_加拿大 2
-      - _US_美国 9
-      - _US_美国->🇫🇷_FR_法国 2
-      - _FI_芬兰
-      - _HK_香港
-      - _US_美国 10
-      - _JP_日本 3
-      - _KR_韩国 2
-      - _US_美国->🇫🇷_FR_法国 3
-      - _CA_加拿大 3
-      - _HK_香港 2
-      - _US_美国 11
       - _CN_中国->🇯🇵_JP_日本
-      - _CN_中国->🇺🇸_US_美国 2
-      - _CA_加拿大 4
+      - _CN_中国->🇯🇵_JP_日本 2
+      - _CN_中国->🇯🇵_JP_日本 3
+      - _HK_香港
+      - _US_美国
+      - _SG_新加坡
+      - _CN_中国->🇸🇬_SG_新加坡
+      - _US_美国 2
+      - _US_美国 3
+      - _JP_日本 2
+      - _FR_法国->🇮🇳_IN_印度
+      - _US_美国->🇮🇳_IN_印度
+      - _US_美国 4
+      - _CN_中国
+      - _FR_法国->🇮🇳_IN_印度 2
+      - _JP_日本 3
+      - _CN_中国 2
+      - _US_美国->🇮🇳_IN_印度 2
+      - _US_美国->🇩🇪_DE_德国
+      - _US_美国 5
+      - _US_美国->🇮🇳_IN_印度 3
+      - _US_美国->🇫🇷_FR_法国
       - _JP_日本 4
-      - _FR_法国
-      - _KR_韩国 3
-      - _US_美国 12
+      - _US_美国 6
+      - _US_美国 7
+      - _DE_德国
+      - _GB_英国
+      - _US_美国 8
+      - _HK_香港 2
+      - _US_美国 9
+      - _SG_新加坡 2
+      - _US_美国 10
       - _HK_香港 3
+      - _KR_韩国
+      - _US_美国 11
+      - _GB_英国 2
+      - _US_美国 12
+      - _FR_法国
+      - _TW_台湾
+      - _SG_新加坡 3
+      - _US_美国->🇮🇳_IN_印度 4
+      - _JP_日本 5
+      - _FR_法国 2
+      - _HK_香港 4
       - _CN_中国->🇭🇰_HK_香港
+      - _CN_中国 3
+      - _US_美国 13
+      - _US_美国 14
+      - _MO_澳门->🇸🇬_SG_新加坡
   - name: 📢 谷歌FCM
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - _JP_日本
-      - _CN_中国->🇹🇼_TW_台湾
-      - _JP_日本 2
-      - _CN_中国->🇰🇷_KR_韩国
-      - _US_美国
-      - _BZ_伯利兹
-      - _US_美国->🇯🇵_JP_日本
-      - _CN_中国->🇺🇸_US_美国
-      - _US_美国->🇮🇳_IN_印度
-      - _US_美国 2
-      - _FR_法国->🇮🇳_IN_印度
-      - _US_美国->🇮🇳_IN_印度 2
-      - _US_美国->🇮🇳_IN_印度 3
-      - _US_美国 3
-      - _BZ_伯利兹->🇺🇸_US_美国
-      - _US_美国 4
-      - _US_美国->🇰🇭_KH_柬埔寨
-      - _US_美国 5
-      - _US_美国->🇫🇷_FR_法国
-      - _US_美国 6
-      - _US_美国->🇮🇳_IN_印度 4
-      - _CN_中国
-      - _US_美国 7
-      - _CA_加拿大
-      - _US_美国->🇵🇱_PL_波兰
-      - _KR_韩国
-      - _US_美国 8
-      - _CN_中国->🇻🇳_VN_越南
-      - _US_美国->🇮🇳_IN_印度 5
-      - _CA_加拿大 2
-      - _US_美国 9
-      - _US_美国->🇫🇷_FR_法国 2
-      - _FI_芬兰
-      - _HK_香港
-      - _US_美国 10
-      - _JP_日本 3
-      - _KR_韩国 2
-      - _US_美国->🇫🇷_FR_法国 3
-      - _CA_加拿大 3
-      - _HK_香港 2
-      - _US_美国 11
       - _CN_中国->🇯🇵_JP_日本
-      - _CN_中国->🇺🇸_US_美国 2
-      - _CA_加拿大 4
+      - _CN_中国->🇯🇵_JP_日本 2
+      - _CN_中国->🇯🇵_JP_日本 3
+      - _HK_香港
+      - _US_美国
+      - _SG_新加坡
+      - _CN_中国->🇸🇬_SG_新加坡
+      - _US_美国 2
+      - _US_美国 3
+      - _JP_日本 2
+      - _FR_法国->🇮🇳_IN_印度
+      - _US_美国->🇮🇳_IN_印度
+      - _US_美国 4
+      - _CN_中国
+      - _FR_法国->🇮🇳_IN_印度 2
+      - _JP_日本 3
+      - _CN_中国 2
+      - _US_美国->🇮🇳_IN_印度 2
+      - _US_美国->🇩🇪_DE_德国
+      - _US_美国 5
+      - _US_美国->🇮🇳_IN_印度 3
+      - _US_美国->🇫🇷_FR_法国
       - _JP_日本 4
-      - _FR_法国
-      - _KR_韩国 3
-      - _US_美国 12
+      - _US_美国 6
+      - _US_美国 7
+      - _DE_德国
+      - _GB_英国
+      - _US_美国 8
+      - _HK_香港 2
+      - _US_美国 9
+      - _SG_新加坡 2
+      - _US_美国 10
       - _HK_香港 3
+      - _KR_韩国
+      - _US_美国 11
+      - _GB_英国 2
+      - _US_美国 12
+      - _FR_法国
+      - _TW_台湾
+      - _SG_新加坡 3
+      - _US_美国->🇮🇳_IN_印度 4
+      - _JP_日本 5
+      - _FR_法国 2
+      - _HK_香港 4
       - _CN_中国->🇭🇰_HK_香港
+      - _CN_中国 3
+      - _US_美国 13
+      - _US_美国 14
+      - _MO_澳门->🇸🇬_SG_新加坡
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -406,55 +406,55 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - _JP_日本
-      - _CN_中国->🇹🇼_TW_台湾
-      - _JP_日本 2
-      - _CN_中国->🇰🇷_KR_韩国
-      - _US_美国
-      - _BZ_伯利兹
-      - _US_美国->🇯🇵_JP_日本
-      - _CN_中国->🇺🇸_US_美国
-      - _US_美国->🇮🇳_IN_印度
-      - _US_美国 2
-      - _FR_法国->🇮🇳_IN_印度
-      - _US_美国->🇮🇳_IN_印度 2
-      - _US_美国->🇮🇳_IN_印度 3
-      - _US_美国 3
-      - _BZ_伯利兹->🇺🇸_US_美国
-      - _US_美国 4
-      - _US_美国->🇰🇭_KH_柬埔寨
-      - _US_美国 5
-      - _US_美国->🇫🇷_FR_法国
-      - _US_美国 6
-      - _US_美国->🇮🇳_IN_印度 4
-      - _CN_中国
-      - _US_美国 7
-      - _CA_加拿大
-      - _US_美国->🇵🇱_PL_波兰
-      - _KR_韩国
-      - _US_美国 8
-      - _CN_中国->🇻🇳_VN_越南
-      - _US_美国->🇮🇳_IN_印度 5
-      - _CA_加拿大 2
-      - _US_美国 9
-      - _US_美国->🇫🇷_FR_法国 2
-      - _FI_芬兰
-      - _HK_香港
-      - _US_美国 10
-      - _JP_日本 3
-      - _KR_韩国 2
-      - _US_美国->🇫🇷_FR_法国 3
-      - _CA_加拿大 3
-      - _HK_香港 2
-      - _US_美国 11
       - _CN_中国->🇯🇵_JP_日本
-      - _CN_中国->🇺🇸_US_美国 2
-      - _CA_加拿大 4
+      - _CN_中国->🇯🇵_JP_日本 2
+      - _CN_中国->🇯🇵_JP_日本 3
+      - _HK_香港
+      - _US_美国
+      - _SG_新加坡
+      - _CN_中国->🇸🇬_SG_新加坡
+      - _US_美国 2
+      - _US_美国 3
+      - _JP_日本 2
+      - _FR_法国->🇮🇳_IN_印度
+      - _US_美国->🇮🇳_IN_印度
+      - _US_美国 4
+      - _CN_中国
+      - _FR_法国->🇮🇳_IN_印度 2
+      - _JP_日本 3
+      - _CN_中国 2
+      - _US_美国->🇮🇳_IN_印度 2
+      - _US_美国->🇩🇪_DE_德国
+      - _US_美国 5
+      - _US_美国->🇮🇳_IN_印度 3
+      - _US_美国->🇫🇷_FR_法国
       - _JP_日本 4
-      - _FR_法国
-      - _KR_韩国 3
-      - _US_美国 12
+      - _US_美国 6
+      - _US_美国 7
+      - _DE_德国
+      - _GB_英国
+      - _US_美国 8
+      - _HK_香港 2
+      - _US_美国 9
+      - _SG_新加坡 2
+      - _US_美国 10
       - _HK_香港 3
+      - _KR_韩国
+      - _US_美国 11
+      - _GB_英国 2
+      - _US_美国 12
+      - _FR_法国
+      - _TW_台湾
+      - _SG_新加坡 3
+      - _US_美国->🇮🇳_IN_印度 4
+      - _JP_日本 5
+      - _FR_法国 2
+      - _HK_香港 4
       - _CN_中国->🇭🇰_HK_香港
+      - _CN_中国 3
+      - _US_美国 13
+      - _US_美国 14
+      - _MO_澳门->🇸🇬_SG_新加坡
 rules:
  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
@@ -3653,226 +3653,5 @@ rules:
  - DOMAIN-SUFFIX,zhimg.com,🎯 全球直连
  - DOMAIN-SUFFIX,zhongsou.com,🎯 全球直连
  - DOMAIN-SUFFIX,zhuihd.com,🎯 全球直连
- - IP-CIDR,8.128.0.0/10,🎯 全球直连,no-resolve
- - IP-CIDR,8.208.0.0/12,🎯 全球直连,no-resolve
- - IP-CIDR,14.1.112.0/22,🎯 全球直连,no-resolve
- - IP-CIDR,41.222.240.0/22,🎯 全球直连,no-resolve
- - IP-CIDR,41.223.119.0/24,🎯 全球直连,no-resolve
- - IP-CIDR,43.242.168.0/22,🎯 全球直连,no-resolve
- - IP-CIDR,45.112.212.0/22,🎯 全球直连,no-resolve
- - IP-CIDR,47.52.0.0/16,🎯 全球直连,no-resolve
- - IP-CIDR,47.56.0.0/15,🎯 全球直连,no-resolve
- - IP-CIDR,47.74.0.0/15,🎯 全球直连,no-resolve
- - IP-CIDR,47.76.0.0/14,🎯 全球直连,no-resolve
- - IP-CIDR,47.80.0.0/12,🎯 全球直连,no-resolve
- - IP-CIDR,47.235.0.0/16,🎯 全球直连,no-resolve
- - IP-CIDR,47.236.0.0/14,🎯 全球直连,no-resolve
- - IP-CIDR,47.240.0.0/14,🎯 全球直连,no-resolve
- - IP-CIDR,47.244.0.0/15,🎯 全球直连,no-resolve
- - IP-CIDR,47.246.0.0/16,🎯 全球直连,no-resolve
- - IP-CIDR,47.250.0.0/15,🎯 全球直连,no-resolve
- - IP-CIDR,47.252.0.0/15,🎯 全球直连,no-resolve
- - IP-CIDR,47.254.0.0/16,🎯 全球直连,no-resolve
- - IP-CIDR,59.82.0.0/20,🎯 全球直连,no-resolve
- - IP-CIDR,59.82.240.0/21,🎯 全球直连,no-resolve
- - IP-CIDR,59.82.248.0/22,🎯 全球直连,no-resolve
- - IP-CIDR,72.254.0.0/16,🎯 全球直连,no-resolve
- - IP-CIDR,103.38.56.0/22,🎯 全球直连,no-resolve
- - IP-CIDR,103.52.76.0/22,🎯 全球直连,no-resolve
- - IP-CIDR,103.206.40.0/22,🎯 全球直连,no-resolve
- - IP-CIDR,110.76.21.0/24,🎯 全球直连,no-resolve
- - IP-CIDR,110.76.23.0/24,🎯 全球直连,no-resolve
- - IP-CIDR,112.125.0.0/17,🎯 全球直连,no-resolve
- - IP-CIDR,116.251.64.0/18,🎯 全球直连,no-resolve
- - IP-CIDR,119.38.208.0/20,🎯 全球直连,no-resolve
- - IP-CIDR,119.38.224.0/20,🎯 全球直连,no-resolve
- - IP-CIDR,119.42.224.0/20,🎯 全球直连,no-resolve
- - IP-CIDR,139.95.0.0/16,🎯 全球直连,no-resolve
- - IP-CIDR,140.205.1.0/24,🎯 全球直连,no-resolve
- - IP-CIDR,140.205.122.0/24,🎯 全球直连,no-resolve
- - IP-CIDR,147.139.0.0/16,🎯 全球直连,no-resolve
- - IP-CIDR,149.129.0.0/16,🎯 全球直连,no-resolve
- - IP-CIDR,155.102.0.0/16,🎯 全球直连,no-resolve
- - IP-CIDR,161.117.0.0/16,🎯 全球直连,no-resolve
- - IP-CIDR,163.181.0.0/16,🎯 全球直连,no-resolve
- - IP-CIDR,170.33.0.0/16,🎯 全球直连,no-resolve
- - IP-CIDR,198.11.128.0/18,🎯 全球直连,no-resolve
- - IP-CIDR,205.204.96.0/19,🎯 全球直连,no-resolve
- - IP-CIDR,19.28.0.0/23,🎯 全球直连,no-resolve
- - IP-CIDR,45.40.192.0/19,🎯 全球直连,no-resolve
- - IP-CIDR,49.51.0.0/16,🎯 全球直连,no-resolve
- - IP-CIDR,62.234.0.0/16,🎯 全球直连,no-resolve
- - IP-CIDR,94.191.0.0/17,🎯 全球直连,no-resolve
- - IP-CIDR,103.7.28.0/22,🎯 全球直连,no-resolve
- - IP-CIDR,103.116.50.0/23,🎯 全球直连,no-resolve
- - IP-CIDR,103.231.60.0/24,🎯 全球直连,no-resolve
- - IP-CIDR,109.244.0.0/16,🎯 全球直连,no-resolve
- - IP-CIDR,111.30.128.0/21,🎯 全球直连,no-resolve
- - IP-CIDR,111.30.136.0/24,🎯 全球直连,no-resolve
- - IP-CIDR,111.30.139.0/24,🎯 全球直连,no-resolve
- - IP-CIDR,111.30.140.0/23,🎯 全球直连,no-resolve
- - IP-CIDR,115.159.0.0/16,🎯 全球直连,no-resolve
- - IP-CIDR,119.28.0.0/15,🎯 全球直连,no-resolve
- - IP-CIDR,120.88.56.0/23,🎯 全球直连,no-resolve
- - IP-CIDR,121.51.0.0/16,🎯 全球直连,no-resolve
- - IP-CIDR,129.28.0.0/16,🎯 全球直连,no-resolve
- - IP-CIDR,129.204.0.0/16,🎯 全球直连,no-resolve
- - IP-CIDR,129.211.0.0/16,🎯 全球直连,no-resolve
- - IP-CIDR,132.232.0.0/16,🎯 全球直连,no-resolve
- - IP-CIDR,134.175.0.0/16,🎯 全球直连,no-resolve
- - IP-CIDR,146.56.192.0/18,🎯 全球直连,no-resolve
- - IP-CIDR,148.70.0.0/16,🎯 全球直连,no-resolve
- - IP-CIDR,150.109.0.0/16,🎯 全球直连,no-resolve
- - IP-CIDR,152.136.0.0/16,🎯 全球直连,no-resolve
- - IP-CIDR,162.14.0.0/16,🎯 全球直连,no-resolve
- - IP-CIDR,162.62.0.0/16,🎯 全球直连,no-resolve
- - IP-CIDR,170.106.130.0/24,🎯 全球直连,no-resolve
- - IP-CIDR,182.254.0.0/16,🎯 全球直连,no-resolve
- - IP-CIDR,188.131.128.0/17,🎯 全球直连,no-resolve
- - IP-CIDR,203.195.128.0/17,🎯 全球直连,no-resolve
- - IP-CIDR,203.205.128.0/17,🎯 全球直连,no-resolve
- - IP-CIDR,210.4.138.0/24,🎯 全球直连,no-resolve
- - IP-CIDR,211.152.128.0/23,🎯 全球直连,no-resolve
- - IP-CIDR,211.152.132.0/23,🎯 全球直连,no-resolve
- - IP-CIDR,211.152.148.0/23,🎯 全球直连,no-resolve
- - IP-CIDR,212.64.0.0/17,🎯 全球直连,no-resolve
- - IP-CIDR,212.129.128.0/17,🎯 全球直连,no-resolve
- - IP-CIDR,45.113.192.0/22,🎯 全球直连,no-resolve
- - IP-CIDR,63.217.23.0/24,🎯 全球直连,no-resolve
- - IP-CIDR,63.243.252.0/24,🎯 全球直连,no-resolve
- - IP-CIDR,103.235.44.0/22,🎯 全球直连,no-resolve
- - IP-CIDR,104.193.88.0/22,🎯 全球直连,no-resolve
- - IP-CIDR,106.12.0.0/15,🎯 全球直连,no-resolve
- - IP-CIDR,114.28.224.0/20,🎯 全球直连,no-resolve
- - IP-CIDR,119.63.192.0/21,🎯 全球直连,no-resolve
- - IP-CIDR,180.76.0.0/24,🎯 全球直连,no-resolve
- - IP-CIDR,180.76.0.0/16,🎯 全球直连,no-resolve
- - IP-CIDR,182.61.0.0/16,🎯 全球直连,no-resolve
- - IP-CIDR,185.10.104.0/22,🎯 全球直连,no-resolve
- - IP-CIDR,202.46.48.0/20,🎯 全球直连,no-resolve
- - IP-CIDR,203.90.238.0/24,🎯 全球直连,no-resolve
- - IP-CIDR,43.254.0.0/22,🎯 全球直连,no-resolve
- - IP-CIDR,45.249.212.0/22,🎯 全球直连,no-resolve
- - IP-CIDR,49.4.0.0/17,🎯 全球直连,no-resolve
- - IP-CIDR,78.101.192.0/19,🎯 全球直连,no-resolve
- - IP-CIDR,78.101.224.0/20,🎯 全球直连,no-resolve
- - IP-CIDR,81.52.161.0/24,🎯 全球直连,no-resolve
- - IP-CIDR,85.97.220.0/22,🎯 全球直连,no-resolve
- - IP-CIDR,103.31.200.0/22,🎯 全球直连,no-resolve
- - IP-CIDR,103.69.140.0/23,🎯 全球直连,no-resolve
- - IP-CIDR,103.218.216.0/22,🎯 全球直连,no-resolve
- - IP-CIDR,114.115.128.0/17,🎯 全球直连,no-resolve
- - IP-CIDR,114.116.0.0/16,🎯 全球直连,no-resolve
- - IP-CIDR,116.63.128.0/18,🎯 全球直连,no-resolve
- - IP-CIDR,116.66.184.0/22,🎯 全球直连,no-resolve
- - IP-CIDR,116.71.96.0/20,🎯 全球直连,no-resolve
- - IP-CIDR,116.71.128.0/21,🎯 全球直连,no-resolve
- - IP-CIDR,116.71.136.0/22,🎯 全球直连,no-resolve
- - IP-CIDR,116.71.141.0/24,🎯 全球直连,no-resolve
- - IP-CIDR,116.71.142.0/24,🎯 全球直连,no-resolve
- - IP-CIDR,116.71.243.0/24,🎯 全球直连,no-resolve
- - IP-CIDR,116.71.244.0/24,🎯 全球直连,no-resolve
- - IP-CIDR,116.71.251.0/24,🎯 全球直连,no-resolve
- - IP-CIDR,117.78.0.0/18,🎯 全球直连,no-resolve
- - IP-CIDR,119.3.0.0/16,🎯 全球直连,no-resolve
- - IP-CIDR,119.8.0.0/21,🎯 全球直连,no-resolve
- - IP-CIDR,119.8.32.0/19,🎯 全球直连,no-resolve
- - IP-CIDR,121.36.0.0/17,🎯 全球直连,no-resolve
- - IP-CIDR,121.36.128.0/18,🎯 全球直连,no-resolve
- - IP-CIDR,121.37.0.0/17,🎯 全球直连,no-resolve
- - IP-CIDR,122.112.128.0/17,🎯 全球直连,no-resolve
- - IP-CIDR,139.9.0.0/18,🎯 全球直连,no-resolve
- - IP-CIDR,139.9.64.0/19,🎯 全球直连,no-resolve
- - IP-CIDR,139.9.100.0/22,🎯 全球直连,no-resolve
- - IP-CIDR,139.9.104.0/21,🎯 全球直连,no-resolve
- - IP-CIDR,139.9.112.0/20,🎯 全球直连,no-resolve
- - IP-CIDR,139.9.128.0/18,🎯 全球直连,no-resolve
- - IP-CIDR,139.9.192.0/19,🎯 全球直连,no-resolve
- - IP-CIDR,139.9.224.0/20,🎯 全球直连,no-resolve
- - IP-CIDR,139.9.240.0/21,🎯 全球直连,no-resolve
- - IP-CIDR,139.9.248.0/22,🎯 全球直连,no-resolve
- - IP-CIDR,139.159.128.0/19,🎯 全球直连,no-resolve
- - IP-CIDR,139.159.160.0/22,🎯 全球直连,no-resolve
- - IP-CIDR,139.159.164.0/23,🎯 全球直连,no-resolve
- - IP-CIDR,139.159.168.0/21,🎯 全球直连,no-resolve
- - IP-CIDR,139.159.176.0/20,🎯 全球直连,no-resolve
- - IP-CIDR,139.159.192.0/18,🎯 全球直连,no-resolve
- - IP-CIDR,159.138.0.0/18,🎯 全球直连,no-resolve
- - IP-CIDR,159.138.64.0/21,🎯 全球直连,no-resolve
- - IP-CIDR,159.138.79.0/24,🎯 全球直连,no-resolve
- - IP-CIDR,159.138.80.0/20,🎯 全球直连,no-resolve
- - IP-CIDR,159.138.96.0/20,🎯 全球直连,no-resolve
- - IP-CIDR,159.138.112.0/21,🎯 全球直连,no-resolve
- - IP-CIDR,159.138.125.0/24,🎯 全球直连,no-resolve
- - IP-CIDR,159.138.128.0/18,🎯 全球直连,no-resolve
- - IP-CIDR,159.138.192.0/20,🎯 全球直连,no-resolve
- - IP-CIDR,159.138.223.0/24,🎯 全球直连,no-resolve
- - IP-CIDR,159.138.224.0/19,🎯 全球直连,no-resolve
- - IP-CIDR,168.195.92.0/22,🎯 全球直连,no-resolve
- - IP-CIDR,185.176.76.0/22,🎯 全球直连,no-resolve
- - IP-CIDR,197.199.0.0/18,🎯 全球直连,no-resolve
- - IP-CIDR,197.210.163.0/24,🎯 全球直连,no-resolve
- - IP-CIDR,197.252.1.0/24,🎯 全球直连,no-resolve
- - IP-CIDR,197.252.2.0/23,🎯 全球直连,no-resolve
- - IP-CIDR,197.252.4.0/22,🎯 全球直连,no-resolve
- - IP-CIDR,197.252.8.0/21,🎯 全球直连,no-resolve
- - IP-CIDR,200.32.52.0/24,🎯 全球直连,no-resolve
- - IP-CIDR,200.32.54.0/24,🎯 全球直连,no-resolve
- - IP-CIDR,200.32.57.0/24,🎯 全球直连,no-resolve
- - IP-CIDR,203.135.0.0/22,🎯 全球直连,no-resolve
- - IP-CIDR,203.135.4.0/23,🎯 全球直连,no-resolve
- - IP-CIDR,203.135.8.0/23,🎯 全球直连,no-resolve
- - IP-CIDR,203.135.11.0/24,🎯 全球直连,no-resolve
- - IP-CIDR,203.135.13.0/24,🎯 全球直连,no-resolve
- - IP-CIDR,203.135.20.0/24,🎯 全球直连,no-resolve
- - IP-CIDR,203.135.22.0/23,🎯 全球直连,no-resolve
- - IP-CIDR,203.135.24.0/23,🎯 全球直连,no-resolve
- - IP-CIDR,203.135.26.0/24,🎯 全球直连,no-resolve
- - IP-CIDR,203.135.29.0/24,🎯 全球直连,no-resolve
- - IP-CIDR,203.135.33.0/24,🎯 全球直连,no-resolve
- - IP-CIDR,203.135.38.0/23,🎯 全球直连,no-resolve
- - IP-CIDR,203.135.40.0/24,🎯 全球直连,no-resolve
- - IP-CIDR,203.135.43.0/24,🎯 全球直连,no-resolve
- - IP-CIDR,203.135.48.0/24,🎯 全球直连,no-resolve
- - IP-CIDR,203.135.50.0/24,🎯 全球直连,no-resolve
- - IP-CIDR,42.186.0.0/16,🎯 全球直连,no-resolve
- - IP-CIDR,45.127.128.0/22,🎯 全球直连,no-resolve
- - IP-CIDR,45.195.24.0/24,🎯 全球直连,no-resolve
- - IP-CIDR,45.253.132.0/22,🎯 全球直连,no-resolve
- - IP-CIDR,45.253.240.0/22,🎯 全球直连,no-resolve
- - IP-CIDR,45.254.48.0/23,🎯 全球直连,no-resolve
- - IP-CIDR,59.111.0.0/20,🎯 全球直连,no-resolve
- - IP-CIDR,59.111.128.0/17,🎯 全球直连,no-resolve
- - IP-CIDR,103.71.120.0/21,🎯 全球直连,no-resolve
- - IP-CIDR,103.71.128.0/22,🎯 全球直连,no-resolve
- - IP-CIDR,103.71.196.0/22,🎯 全球直连,no-resolve
- - IP-CIDR,103.71.200.0/22,🎯 全球直连,no-resolve
- - IP-CIDR,103.72.12.0/22,🎯 全球直连,no-resolve
- - IP-CIDR,103.72.18.0/23,🎯 全球直连,no-resolve
- - IP-CIDR,103.72.24.0/22,🎯 全球直连,no-resolve
- - IP-CIDR,103.72.28.0/23,🎯 全球直连,no-resolve
- - IP-CIDR,103.72.38.0/23,🎯 全球直连,no-resolve
- - IP-CIDR,103.72.40.0/23,🎯 全球直连,no-resolve
- - IP-CIDR,103.72.44.0/22,🎯 全球直连,no-resolve
- - IP-CIDR,103.72.48.0/21,🎯 全球直连,no-resolve
- - IP-CIDR,103.72.128.0/21,🎯 全球直连,no-resolve
- - IP-CIDR,103.74.24.0/21,🎯 全球直连,no-resolve
- - IP-CIDR,103.74.48.0/22,🎯 全球直连,no-resolve
- - IP-CIDR,103.126.92.0/22,🎯 全球直连,no-resolve
- - IP-CIDR,103.129.252.0/22,🎯 全球直连,no-resolve
- - IP-CIDR,103.131.252.0/22,🎯 全球直连,no-resolve
- - IP-CIDR,103.135.240.0/22,🎯 全球直连,no-resolve
- - IP-CIDR,103.196.64.0/22,🎯 全球直连,no-resolve
- - IP-CIDR,106.2.32.0/19,🎯 全球直连,no-resolve
- - IP-CIDR,106.2.64.0/18,🎯 全球直连,no-resolve
- - IP-CIDR,114.113.196.0/22,🎯 全球直连,no-resolve
- - IP-CIDR,114.113.200.0/22,🎯 全球直连,no-resolve
- - IP-CIDR,115.236.112.0/20,🎯 全球直连,no-resolve
- - IP-CIDR,115.238.76.0/22,🎯 全球直连,no-resolve
- - IP-CIDR,123.58.160.0/19,🎯 全球直连,no-resolve
- - IP-CIDR,223.252.192.0/19,🎯 全球直连,no-resolve
- - IP-CIDR,101.198.128.0/18,🎯 全球直连,no-resolve
- - IP-CIDR,101.198.192.0/19,🎯 全球直连,no-resolve
- - IP-CIDR,101.199.196.0/22,🎯 全球直连,no-resolve
  - GEOIP,CN,🎯 全球直连
  - MATCH,🐟 漏网之鱼
