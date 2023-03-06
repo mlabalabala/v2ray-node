@@ -123,6 +123,3 @@ if __name__ == "__main__":
     d = time.strftime('%d')
 
     GenNods()
-
-
-
