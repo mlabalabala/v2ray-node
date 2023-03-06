@@ -1,1 +1,1 @@
-# v2ray-node
+# node for clash and v2ray
