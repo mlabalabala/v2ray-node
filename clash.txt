@@ -4,6 +4,7 @@ allow-lan: true
 mode: Rule
 log-level: info
 external-controller: :9090
+external-ui: ./web
 proxies:
   - name: tro4replit
     server: 172.67.68.8
