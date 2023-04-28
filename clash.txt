@@ -12,12 +12,12 @@ proxies:
     type: trojan
     password: 0bc8c688-e142-4a64-8885-f8c7498f8a90
     network: ws
-    sni: tro4replit.bunnylblbblbl.eu.org
+    sni: nodev1.bunnylblbblbl.eu.org
     udp: true
     ws-opts:
       path: /0bc8c688-e142-4a64-8885-f8c7498f8a90?ed=2048
       headers:
-        Host: tro4replit.bunnylblbblbl.eu.org
+        Host: nodev1.bunnylblbblbl.eu.org
   - name: v2doparx-tls
     server: 172.67.68.8
     port: 8443
@@ -31,7 +31,7 @@ proxies:
     ws-opts:
       path: /0bc8c688-e142-4a64-8885-f8c7498f8a90-vm?ed=2048
       headers:
-        Host: v2doparx.bunnylblbblbl.eu.org
+        Host: bunnylblbblbl.eu.org
     udp: true
   - name: V2Replit-tls
     server: 172.67.68.8
@@ -42,12 +42,12 @@ proxies:
     cipher: auto
     tls: true
     skip-cert-verify: true
-    servername: v24replit.bunnylblbblbl.eu.org
+    servername: nodev0.bunnylblbblbl.eu.org
     network: ws
     ws-opts:
       path: /0bc8c688-e142-4a64-8885-f8c7498f8a90?ed=2048
       headers:
-        Host: v24replit.bunnylblbblbl.eu.org
+        Host: nodev0.bunnylblbblbl.eu.org
     udp: true
   - name: v2doparx
     server: 172.67.68.8
@@ -62,7 +62,7 @@ proxies:
     ws-opts:
       path: /0bc8c688-e142-4a64-8885-f8c7498f8a90-vm?ed=2048
       headers:
-        Host: v2doparx.bunnylblbblbl.eu.org
+        Host: nodev2.bunnylblbblbl.eu.org
     udp: true
   - name: V2Replit
     server: 172.67.68.8
@@ -73,12 +73,12 @@ proxies:
     cipher: auto
     tls: false
     skip-cert-verify: true
-    servername: v24replit.shihaojie1116.workers.dev
+    servername: nodev0.shihaojie1116.workers.dev
     network: ws
     ws-opts:
       path: /0bc8c688-e142-4a64-8885-f8c7498f8a90?ed=2048
       headers:
-        Host: v24replit.bunnylblbblbl.eu.org
+        Host: nodev0.bunnylblbblbl.eu.org
     udp: true
 proxy-groups:
   - name: 🚀 节点选择
