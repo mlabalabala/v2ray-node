@@ -14,6 +14,7 @@ proxies:
     password: 0bc8c688-e142-4a64-8885-f8c7498f8a90
     network: ws
     sni: nodev1.bunnylblbblbl.eu.org
+    skip-cert-verify: false
     udp: true
     ws-opts:
       path: /0bc8c688-e142-4a64-8885-f8c7498f8a90?ed=2048
@@ -27,7 +28,7 @@ proxies:
     alterId: 0
     cipher: auto
     tls: true
-    skip-cert-verify: true
+    skip-cert-verify: false
     servername: nodev0.bunnylblbblbl.eu.org
     network: ws
     ws-opts:
