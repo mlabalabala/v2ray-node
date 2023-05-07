@@ -1,13 +1,11 @@
-
-port: 7890
-socks-port: 7891
+mixed-port: 10807
 allow-lan: true
 mode: Rule
 log-level: info
 external-controller: :9090
 external-ui: ./web
 proxies:
-  - name: tro4replit
+  - name: nodev1
     server: 172.67.68.8
     port: 443
     type: trojan
@@ -20,7 +18,7 @@ proxies:
       path: /0bc8c688-e142-4a64-8885-f8c7498f8a90?ed=2048
       headers:
         Host: nodev1.bunnylblbblbl.eu.org
-  - name: V2Replit-tls
+  - name: nodev0-tls
     server: 172.67.68.8
     port: 8443
     type: vmess
@@ -36,7 +34,7 @@ proxies:
       headers:
         Host: nodev0.bunnylblbblbl.eu.org
     udp: true
-  - name: V2Replit
+  - name: nodev0
     server: 172.67.68.8
     port: 8880
     type: vmess
@@ -58,16 +56,16 @@ proxy-groups:
     proxies:
       - DIRECT
       - 📐 负载均衡
-      - tro4replit
-      - V2Replit-tls
-      - V2Replit
+      - nodev1
+      - nodev0-tls
+      - nodev0
   - name: 📐 负载均衡
     type: load-balance
     url: 'http://www.gstatic.com/generate_204'
     interval: 300
     proxies:
-      - V2Replit-tls
-      - V2Replit
+      - nodev0-tls
+      - nodev0
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -84,9 +82,9 @@ proxy-groups:
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - tro4replit
-      - V2Replit-tls
-      - V2Replit
+      - nodev1
+      - nodev0-tls
+      - nodev0
 rules:
  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
