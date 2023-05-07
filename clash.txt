@@ -57,7 +57,15 @@ proxy-groups:
     type: select
     proxies:
       - DIRECT
+      - 📐 负载均衡
       - tro4replit
+      - V2Replit-tls
+      - V2Replit
+  - name: 📐 负载均衡
+    type: load-balance
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 300
+    proxies:
       - V2Replit-tls
       - V2Replit
   - name: 🎯 全球直连
@@ -65,6 +73,7 @@ proxy-groups:
     proxies:
       - DIRECT
       - 🚀 节点选择
+      - 📐 负载均衡
   - name: 🛑 全球拦截
     type: select
     proxies:
