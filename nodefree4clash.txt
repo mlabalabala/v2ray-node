@@ -5,386 +5,386 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: _CN_中国->🇸🇬_SG_新加坡, server: cmaisallin.debugspace.work, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 51649:231456575, obfs-param: t.me/vpnhat, udp: true}
-  - {name: _CN_中国->🇰🇷_KR_韩国, server: 221.131.165.175, port: 19106, type: vmess, uuid: 1b35440a-1309-339b-9dd3-ff90ff887d76, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /soda}, udp: true}
-  - {name: _CN_中国->🇭🇰_HK_香港, server: zf.heigouyunzf.xyz, port: 38805, type: trojan, password: e958b47d-3510-445a-99cb-dc98d227e29e, skip-cert-verify: true, udp: true}
-  - {name: _CN_中国->🇭🇰_HK_香港 2, server: gd-cm.32jr.com, port: 56018, type: ss, cipher: chacha20-ietf-poly1305, password: de758a28-2e57-4fdd-8548-4ae2e490bcff, udp: true}
-  - {name: _SG_新加坡, server: 52.221.214.113, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: _SG_新加坡 2, server: sg1.fp3kemyh-cm4s-2hak-2gb9-w3534umy2sq5.9d8f269f96b25232-759cbb36d6548597.kaufen, port: 12025, type: trojan, password: 4b526505-3de3-4cb4-8f99-70b65adea09f, sni: rfetch.yektanet.net, skip-cert-verify: true, udp: true}
-  - {name: _HK_香港, server: hk2.yihaobao.xyz, port: 10022, type: trojan, password: bb72bd02-b929-405c-b274-e0ff95141df4, sni: hk2.yihaobao.xyz, skip-cert-verify: true, udp: true}
-  - {name: _TW_台湾, server: 103.177.33.180, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 9e44e9ffe5c2, plugin: v2ray-plugin, plugin-opts: {mode: "", host: "", path: "", tls: false, mux: false, skip-cert-verify: true}, udp: true}
-  - {name: _US_美国, server: 142.4.110.28, port: 52908, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _US_美国 2, server: 170.178.167.149, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _US_美国 3, server: 137.175.11.145, port: 33002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _US_美国 4, server: 216.52.59.50, port: 20458, type: trojan, password: m8krTirthj, skip-cert-verify: true, udp: true}
-  - {name: _US_美国 5, server: 108.186.4.1, port: 42382, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _US_美国 6, server: 23.225.9.198, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _US_美国 7, server: 142.4.112.149, port: 44667, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _US_美国 8, server: 142.4.110.125, port: 54002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _RU_俄罗斯联邦->🇭🇰_HK_香港, server: 21.sanfen001.top, port: 8880, type: vmess, uuid: 82a573e6-6ac2-448a-b36b-f996ccdeda23, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: hk.cashdawiodxkawjaiocjdawdawdadwrawgfsegsededwadawfgrdrcvsssl.top}}, udp: true}
-  - {name: _US_美国 9, server: 54.190.212.115, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: _TW_台湾 2, server: tw99-hinet.mynodes001.one, port: 445, type: vmess, uuid: 5f04de84-6b7e-3564-82c2-d2a998002629, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _US_美国 10, server: 142.4.104.201, port: 56002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _GB_英国->🇩🇪_DE_德国, server: dearma.76898102.xyz, port: 2052, type: vmess, uuid: 1262dace-d355-3868-915f-b7418c2e7390, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /abuciwyg, headers: {Host: dearma.76898102.xyz}}, udp: true}
-  - {name: _US_美国 11, server: 198.2.203.156, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _US_美国 12, server: 142.4.104.204, port: 56002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _US_美国 13, server: 140.99.127.222, port: 54774, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _US_美国 14, server: cf-yd-dns.sharecentre.online, port: 80, type: vmess, uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: dp3.scproxy.top}}, udp: true}
-  - {name: _US_美国->🇸🇬_SG_新加坡, server: 108.162.192.79, port: 2095, type: vmess, uuid: b710770a-fdaf-41fb-bbe4-68a6c41e2605, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /blue, headers: {Host: xt.ylks01.eu.org}}, udp: true}
-  - {name: _US_美国->🇸🇬_SG_新加坡 2, server: 172.64.206.43, port: 2095, type: vmess, uuid: b710770a-fdaf-41fb-bbe4-68a6c41e2605, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /blue, headers: {Host: xt.ylks01.eu.org}}, udp: true}
-  - {name: _US_美国 15, server: bluehost.com, port: 443, type: vmess, uuid: be74ca03-6a7c-4c88-edc2-c6434ead0cfa, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /16575, headers: {Host: cdnca1.digisport.shop}}, udp: true}
-  - {name: _US_美国 16, server: cf-dx-dns.sharecentre.online, port: 80, type: vmess, uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: dp4.scproxy.top}}, udp: true}
-  - {name: _CR_哥斯达黎加->🇸🇬_SG_新加坡, server: 190.93.246.9, port: 2095, type: vmess, uuid: b710770a-fdaf-41fb-bbe4-68a6c41e2605, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /blue, headers: {Host: xt.ylks01.eu.org}}, udp: true}
-  - {name: _US_美国->🇸🇬_SG_新加坡 3, server: 104.18.204.99, port: 2096, type: vmess, uuid: f8c8962d-ecf1-4155-a6e3-b44bd3a9acea, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /blue, headers: {Host: xt.ylks01.eu.org}}, udp: true}
-  - {name: _US_美国->🇳🇱_NL_荷兰, server: 156.225.67.52, port: 52449, type: vmess, uuid: 990006bd-cb20-482f-9c97-f5fc65359605, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _US_美国->🇳🇱_NL_荷兰 2, server: 156.225.67.247, port: 49123, type: vmess, uuid: 84d1de11-ce12-4a15-8312-1338356d4ac4, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _US_美国 17, server: 198.2.204.241, port: 46902, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _US_美国 18, server: 137.175.18.65, port: 42002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _SG_新加坡 3, server: sg4.zingfast.vn, port: 80, type: vmess, uuid: 533724ad-58ef-4147-88dc-9da523c15fc4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /anti13.zingfast.vn, headers: {Host: sg4.zingfast.vn}}, udp: true}
-  - {name: _SG_新加坡 4, server: 159.223.94.156, port: 80, type: vmess, uuid: 533724ad-58ef-4147-88dc-9da523c15fc4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /anti13.zingfast.vn}, udp: true}
-  - {name: _US_美国->🇩🇪_DE_德国, server: 8x69c3-8080.csb.app, port: 443, type: vmess, uuid: 42bedd62-b62d-4681-a6b2-c9f3669a8454, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 8x69c3-8080.csb.app}}, udp: true}
-  - {name: _IN_印度, server: 152.70.74.66, port: 443, type: trojan, password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e, skip-cert-verify: true, udp: true}
-  - {name: _FR_法国->🇳🇱_NL_荷兰, server: 156.249.18.38, port: 48972, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _FR_法国, server: 94.23.116.190, port: 443, type: ssr, cipher: aes-256-ctr, password: HowdyBypasser2022, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
-  - {name: _US_美国->🇸🇬_SG_新加坡 4, server: xt.ylks01.eu.org, port: 443, type: vmess, uuid: 2db406fc-a377-4398-8781-bac4acb3e864, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /blue, headers: {Host: xt.ylks01.eu.org}}, udp: true}
-  - {name: _US_美国->🇬🇧_GB_英国, server: 104.16.183.101, port: 443, type: vmess, uuid: 3de4ec27-74b4-43e3-bf23-18e726ac80bc, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /P6kpn5UKG40MNLK2, headers: {Host: pWghljmnknq.janbaroon.com}}, udp: true}
-  - {name: _VN_越南, server: 103.173.255.21, port: 443, type: trojan, password: 99507239-7601-4c76-afda-18be311b0bec, skip-cert-verify: true, udp: true}
-  - {name: _KR_韩国, server: 3.38.211.225, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: _US_美国->🇹🇼_TW_台湾, server: rochinet.fullaccesstointernet.cn.eu.org, port: 443, type: vmess, uuid: 65864938-ab50-4efa-bc6a-084f42a8de63, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /freedom, headers: {Host: rochinet.fullaccesstointernet.cn.eu.org}}, udp: true}
-  - {name: _CN_中国, server: 111.67.201.10, port: 80, type: vmess, uuid: e9ee407f-2500-3e9d-bc00-26722f99ed06, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /v2ray, headers: {Host: v9-dy.ixigua.com}}, udp: true}
-  - {name: _US_美国->🇹🇼_TW_台湾 2, server: akrab2.v-pn.my.id, port: 443, type: vmess, uuid: b07a349b-5e3c-4b17-aabe-d1dc63376ecf, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /v2ray, headers: {Host: idc8.vpn-akcelluler.my.id}}, udp: true}
-  - {name: _US_美国 19, server: v2ray.online, port: 443, type: vmess, uuid: 00BBF5B8-173E-6818-9927-5AD1AA073C7D, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /speedtest, headers: {Host: Kansas.v2ray.online}}, udp: true}
-  - {name: _CA_加拿大, server: 23.227.38.99, port: 443, type: vmess, uuid: 86d37526-5758-4cec-862f-df404b313086, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /3G6WPDL7, headers: {Host: 1.freek1.xyz}}, udp: true}
+  - {name: _SG_新加坡, server: sg-am3.eqsunshine.com, port: 32001, type: ssr, cipher: aes-256-cfb, password: 3g0dHlKME, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
+  - {name: _CN_中国->🇸🇬_SG_新加坡, server: 9s5g06.abzoones.xyz, port: 36211, type: vmess, uuid: c2e4ad7a-2426-4c95-9c81-f09b950e29f8, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: _US_美国->🇰🇷_KR_韩国, server: 54.192.150.188, port: 443, type: vmess, uuid: b393a93b-ae0f-4b3a-b049-b1a81a3e490a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /share, headers: {Host: d2kzpvdyi8xw4u.cloudfront.net}}, udp: true}
+  - {name: _CN_中国->🇺🇸_US_美国, server: 120.233.43.33, port: 51002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _JP_日本, server: 45.88.43.232, port: 46202, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _US_美国, server: 137.175.41.201, port: 50004, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _US_美国 2, server: 192.74.228.185, port: 42857, type: vmess, uuid: 051b844f-efe3-4847-92aa-66b5de0b6d4e, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _CN_中国->🇺🇸_US_美国 2, server: 3u1s04.abzoones.xyz, port: 36501, type: vmess, uuid: c2e4ad7a-2426-4c95-9c81-f09b950e29f8, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: _US_美国 3, server: 142.4.112.1, port: 51091, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _US_美国 4, server: 137.175.9.204, port: 57902, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _US_美国 5, server: 137.175.1.53, port: 46677, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _US_美国 6, server: 163.123.192.60, port: 443, type: trojan, password: 41bec492-cd79-4b57-9a15-7d2bb00fcfca, sni: 18-140-66-207.nhost.00cdn.com, skip-cert-verify: true, udp: true}
+  - {name: _US_美国 7, server: 137.175.9.202, port: 57902, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _US_美国 8, server: 108.186.4.1, port: 42382, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _US_美国 9, server: 142.4.112.149, port: 44667, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _US_美国 10, server: 140.99.77.57, port: 48901, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _US_美国 11, server: 170.178.167.149, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _US_美国 12, server: 45.12.144.89, port: 47127, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _US_美国 13, server: 140.99.59.254, port: 55512, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _US_美国 14, server: 142.4.104.201, port: 56002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _SG_新加坡 2, server: 3.1.203.193, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: _US_美国 15, server: 140.99.140.158, port: 57172, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _US_美国 16, server: 137.175.1.13, port: 53403, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _US_美国 17, server: 137.175.11.145, port: 33002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _US_美国 18, server: 107.167.16.102, port: 47074, type: vmess, uuid: b74f4afa-1a57-4aff-b7e5-8ad5ea33566f, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _US_美国 19, server: 38.63.0.78, port: 47002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _JP_日本 2, server: 3.112.73.233, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: _US_美国 20, server: 192.74.250.88, port: 55832, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _US_美国 21, server: 107.148.192.155, port: 49924, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _CN_中国->🇦🇺_AU_澳大利亚, server: 5a4u04.abzoones.xyz, port: 36821, type: vmess, uuid: c2e4ad7a-2426-4c95-9c81-f09b950e29f8, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: _US_美国 22, server: 142.4.100.44, port: 45009, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _FR_法国->🇳🇱_NL_荷兰, server: 156.249.18.10, port: 47852, type: vmess, uuid: 5a4d69ad-20a9-4941-b223-87bbd09f5f52, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _US_美国 23, server: 142.4.127.19, port: 53013, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _US_美国 24, server: 142.4.112.26, port: 51091, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _GB_英国, server: 109.74.201.20, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /chat}, udp: true}
+  - {name: _HK_香港->🇳🇱_NL_荷兰, server: 156.245.8.158, port: 49934, type: vmess, uuid: 11117d4c-3b6a-4e76-8bcc-2b41b3e9ca93, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _US_美国->🇬🇧_GB_英国, server: 104.16.32.142, port: 443, type: vmess, uuid: 3de4ec27-74b4-43e3-bf23-18e726ac80bc, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /P6kpn5UKG40MNLK2, headers: {Host: QkGxa2MSvmu.janbaroon.com}}, udp: true}
+  - {name: _US_美国->🇳🇱_NL_荷兰, server: 156.225.67.223, port: 48021, type: vmess, uuid: ebec2adf-e940-446f-bed4-d8c91143b54a, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _US_美国 25, server: cf-dx-dns.sharecentre.online, port: 80, type: vmess, uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: dp4.scproxy.top}}, udp: true}
+  - {name: _US_美国->🇩🇪_DE_德国, server: ns1.v2-vip.fun, port: 80, type: vmess, uuid: 4f859149-2b2f-4b90-9a2c-8c0fe15c8c4c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /ozX9aUPiJVtoLavjTW, headers: {Host: de14.irteh.fun}}, udp: true}
+  - {name: _CN_中国->🇺🇸_US_美国 3, server: us-08-cz2dg2.ferryhwp8ebm.com, port: 7308, type: trojan, password: 97d557df-6f6a-5bad-9483-600aba02da3a, sni: us-08-650.duuk.info, skip-cert-verify: true, udp: true}
+  - {name: _US_美国->🇳🇱_NL_荷兰 2, server: 156.225.67.79, port: 40023, type: vmess, uuid: 3fd637ad-46fe-4f85-a6e8-86b00bca1122, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _CN_中国->🇦🇷_AR_阿根廷, server: 9a8r04.abzoones.xyz, port: 36861, type: vmess, uuid: c2e4ad7a-2426-4c95-9c81-f09b950e29f8, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: _CN_中国->🇧🇷_BR_巴西, server: 6i2r04.abzoones.xyz, port: 36877, type: vmess, uuid: c2e4ad7a-2426-4c95-9c81-f09b950e29f8, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: _JP_日本 3, server: trs19.bolab.net, port: 443, type: trojan, password: 7a73f1dc97a70905870c0c0484b12145, skip-cert-verify: true, udp: true}
+  - {name: _US_美国->🇬🇧_GB_英国 2, server: 104.16.48.44, port: 443, type: vmess, uuid: 3de4ec27-74b4-43e3-bf23-18e726ac80bc, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /P6kpn5UKG40MNLK2, headers: {Host: SX8xtGOKv1MaJh.janbaroon.com}}, udp: true}
+  - {name: _CN_中国->🇬🇧_GB_英国, server: en2.vfun.icu, port: 443, type: ssr, cipher: aes-256-cfb, password: vyunme, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 17422:TTp0SX, obfs-param: ab93117422.jd.hk, udp: true}
+  - {name: _CN_中国->🇯🇵_JP_日本, server: 42.157.195.245, port: 12127, type: ssr, cipher: aes-256-cfb, password: 68xdgu9eyif, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 600777:154T8b, obfs-param: "", udp: true}
+  - {name: _GB_英国 2, server: 51.89.74.241, port: 51102, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _US_美国 26, server: 138.124.183.93, port: 27542, type: ss, cipher: chacha20-ietf-poly1305, password: 3f0Gag5bPSpDYwLMahAgp8, udp: true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - DIRECT
-      - _CN_中国->🇸🇬_SG_新加坡
-      - _CN_中国->🇰🇷_KR_韩国
-      - _CN_中国->🇭🇰_HK_香港
-      - _CN_中国->🇭🇰_HK_香港 2
       - _SG_新加坡
-      - _SG_新加坡 2
-      - _HK_香港
-      - _TW_台湾
+      - _CN_中国->🇸🇬_SG_新加坡
+      - _US_美国->🇰🇷_KR_韩国
+      - _CN_中国->🇺🇸_US_美国
+      - _JP_日本
       - _US_美国
       - _US_美国 2
+      - _CN_中国->🇺🇸_US_美国 2
       - _US_美国 3
       - _US_美国 4
       - _US_美国 5
       - _US_美国 6
       - _US_美国 7
       - _US_美国 8
-      - _RU_俄罗斯联邦->🇭🇰_HK_香港
       - _US_美国 9
-      - _TW_台湾 2
       - _US_美国 10
-      - _GB_英国->🇩🇪_DE_德国
       - _US_美国 11
       - _US_美国 12
       - _US_美国 13
       - _US_美国 14
-      - _US_美国->🇸🇬_SG_新加坡
-      - _US_美国->🇸🇬_SG_新加坡 2
+      - _SG_新加坡 2
       - _US_美国 15
       - _US_美国 16
-      - _CR_哥斯达黎加->🇸🇬_SG_新加坡
-      - _US_美国->🇸🇬_SG_新加坡 3
-      - _US_美国->🇳🇱_NL_荷兰
-      - _US_美国->🇳🇱_NL_荷兰 2
       - _US_美国 17
       - _US_美国 18
-      - _SG_新加坡 3
-      - _SG_新加坡 4
-      - _US_美国->🇩🇪_DE_德国
-      - _IN_印度
-      - _FR_法国->🇳🇱_NL_荷兰
-      - _FR_法国
-      - _US_美国->🇸🇬_SG_新加坡 4
-      - _US_美国->🇬🇧_GB_英国
-      - _VN_越南
-      - _KR_韩国
-      - _US_美国->🇹🇼_TW_台湾
-      - _CN_中国
-      - _US_美国->🇹🇼_TW_台湾 2
       - _US_美国 19
-      - _CA_加拿大
+      - _JP_日本 2
+      - _US_美国 20
+      - _US_美国 21
+      - _CN_中国->🇦🇺_AU_澳大利亚
+      - _US_美国 22
+      - _FR_法国->🇳🇱_NL_荷兰
+      - _US_美国 23
+      - _US_美国 24
+      - _GB_英国
+      - _HK_香港->🇳🇱_NL_荷兰
+      - _US_美国->🇬🇧_GB_英国
+      - _US_美国->🇳🇱_NL_荷兰
+      - _US_美国 25
+      - _US_美国->🇩🇪_DE_德国
+      - _CN_中国->🇺🇸_US_美国 3
+      - _US_美国->🇳🇱_NL_荷兰 2
+      - _CN_中国->🇦🇷_AR_阿根廷
+      - _CN_中国->🇧🇷_BR_巴西
+      - _JP_日本 3
+      - _US_美国->🇬🇧_GB_英国 2
+      - _CN_中国->🇬🇧_GB_英国
+      - _CN_中国->🇯🇵_JP_日本
+      - _GB_英国 2
+      - _US_美国 26
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - _CN_中国->🇸🇬_SG_新加坡
-      - _CN_中国->🇰🇷_KR_韩国
-      - _CN_中国->🇭🇰_HK_香港
-      - _CN_中国->🇭🇰_HK_香港 2
       - _SG_新加坡
-      - _SG_新加坡 2
-      - _HK_香港
-      - _TW_台湾
+      - _CN_中国->🇸🇬_SG_新加坡
+      - _US_美国->🇰🇷_KR_韩国
+      - _CN_中国->🇺🇸_US_美国
+      - _JP_日本
       - _US_美国
       - _US_美国 2
+      - _CN_中国->🇺🇸_US_美国 2
       - _US_美国 3
       - _US_美国 4
       - _US_美国 5
       - _US_美国 6
       - _US_美国 7
       - _US_美国 8
-      - _RU_俄罗斯联邦->🇭🇰_HK_香港
       - _US_美国 9
-      - _TW_台湾 2
       - _US_美国 10
-      - _GB_英国->🇩🇪_DE_德国
       - _US_美国 11
       - _US_美国 12
       - _US_美国 13
       - _US_美国 14
-      - _US_美国->🇸🇬_SG_新加坡
-      - _US_美国->🇸🇬_SG_新加坡 2
+      - _SG_新加坡 2
       - _US_美国 15
       - _US_美国 16
-      - _CR_哥斯达黎加->🇸🇬_SG_新加坡
-      - _US_美国->🇸🇬_SG_新加坡 3
-      - _US_美国->🇳🇱_NL_荷兰
-      - _US_美国->🇳🇱_NL_荷兰 2
       - _US_美国 17
       - _US_美国 18
-      - _SG_新加坡 3
-      - _SG_新加坡 4
-      - _US_美国->🇩🇪_DE_德国
-      - _IN_印度
-      - _FR_法国->🇳🇱_NL_荷兰
-      - _FR_法国
-      - _US_美国->🇸🇬_SG_新加坡 4
-      - _US_美国->🇬🇧_GB_英国
-      - _VN_越南
-      - _KR_韩国
-      - _US_美国->🇹🇼_TW_台湾
-      - _CN_中国
-      - _US_美国->🇹🇼_TW_台湾 2
       - _US_美国 19
-      - _CA_加拿大
+      - _JP_日本 2
+      - _US_美国 20
+      - _US_美国 21
+      - _CN_中国->🇦🇺_AU_澳大利亚
+      - _US_美国 22
+      - _FR_法国->🇳🇱_NL_荷兰
+      - _US_美国 23
+      - _US_美国 24
+      - _GB_英国
+      - _HK_香港->🇳🇱_NL_荷兰
+      - _US_美国->🇬🇧_GB_英国
+      - _US_美国->🇳🇱_NL_荷兰
+      - _US_美国 25
+      - _US_美国->🇩🇪_DE_德国
+      - _CN_中国->🇺🇸_US_美国 3
+      - _US_美国->🇳🇱_NL_荷兰 2
+      - _CN_中国->🇦🇷_AR_阿根廷
+      - _CN_中国->🇧🇷_BR_巴西
+      - _JP_日本 3
+      - _US_美国->🇬🇧_GB_英国 2
+      - _CN_中国->🇬🇧_GB_英国
+      - _CN_中国->🇯🇵_JP_日本
+      - _GB_英国 2
+      - _US_美国 26
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - _CN_中国->🇸🇬_SG_新加坡
-      - _CN_中国->🇰🇷_KR_韩国
-      - _CN_中国->🇭🇰_HK_香港
-      - _CN_中国->🇭🇰_HK_香港 2
       - _SG_新加坡
-      - _SG_新加坡 2
-      - _HK_香港
-      - _TW_台湾
+      - _CN_中国->🇸🇬_SG_新加坡
+      - _US_美国->🇰🇷_KR_韩国
+      - _CN_中国->🇺🇸_US_美国
+      - _JP_日本
       - _US_美国
       - _US_美国 2
+      - _CN_中国->🇺🇸_US_美国 2
       - _US_美国 3
       - _US_美国 4
       - _US_美国 5
       - _US_美国 6
       - _US_美国 7
       - _US_美国 8
-      - _RU_俄罗斯联邦->🇭🇰_HK_香港
       - _US_美国 9
-      - _TW_台湾 2
       - _US_美国 10
-      - _GB_英国->🇩🇪_DE_德国
       - _US_美国 11
       - _US_美国 12
       - _US_美国 13
       - _US_美国 14
-      - _US_美国->🇸🇬_SG_新加坡
-      - _US_美国->🇸🇬_SG_新加坡 2
+      - _SG_新加坡 2
       - _US_美国 15
       - _US_美国 16
-      - _CR_哥斯达黎加->🇸🇬_SG_新加坡
-      - _US_美国->🇸🇬_SG_新加坡 3
-      - _US_美国->🇳🇱_NL_荷兰
-      - _US_美国->🇳🇱_NL_荷兰 2
       - _US_美国 17
       - _US_美国 18
-      - _SG_新加坡 3
-      - _SG_新加坡 4
-      - _US_美国->🇩🇪_DE_德国
-      - _IN_印度
-      - _FR_法国->🇳🇱_NL_荷兰
-      - _FR_法国
-      - _US_美国->🇸🇬_SG_新加坡 4
-      - _US_美国->🇬🇧_GB_英国
-      - _VN_越南
-      - _KR_韩国
-      - _US_美国->🇹🇼_TW_台湾
-      - _CN_中国
-      - _US_美国->🇹🇼_TW_台湾 2
       - _US_美国 19
-      - _CA_加拿大
+      - _JP_日本 2
+      - _US_美国 20
+      - _US_美国 21
+      - _CN_中国->🇦🇺_AU_澳大利亚
+      - _US_美国 22
+      - _FR_法国->🇳🇱_NL_荷兰
+      - _US_美国 23
+      - _US_美国 24
+      - _GB_英国
+      - _HK_香港->🇳🇱_NL_荷兰
+      - _US_美国->🇬🇧_GB_英国
+      - _US_美国->🇳🇱_NL_荷兰
+      - _US_美国 25
+      - _US_美国->🇩🇪_DE_德国
+      - _CN_中国->🇺🇸_US_美国 3
+      - _US_美国->🇳🇱_NL_荷兰 2
+      - _CN_中国->🇦🇷_AR_阿根廷
+      - _CN_中国->🇧🇷_BR_巴西
+      - _JP_日本 3
+      - _US_美国->🇬🇧_GB_英国 2
+      - _CN_中国->🇬🇧_GB_英国
+      - _CN_中国->🇯🇵_JP_日本
+      - _GB_英国 2
+      - _US_美国 26
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - _CN_中国->🇸🇬_SG_新加坡
-      - _CN_中国->🇰🇷_KR_韩国
-      - _CN_中国->🇭🇰_HK_香港
-      - _CN_中国->🇭🇰_HK_香港 2
       - _SG_新加坡
-      - _SG_新加坡 2
-      - _HK_香港
-      - _TW_台湾
+      - _CN_中国->🇸🇬_SG_新加坡
+      - _US_美国->🇰🇷_KR_韩国
+      - _CN_中国->🇺🇸_US_美国
+      - _JP_日本
       - _US_美国
       - _US_美国 2
+      - _CN_中国->🇺🇸_US_美国 2
       - _US_美国 3
       - _US_美国 4
       - _US_美国 5
       - _US_美国 6
       - _US_美国 7
       - _US_美国 8
-      - _RU_俄罗斯联邦->🇭🇰_HK_香港
       - _US_美国 9
-      - _TW_台湾 2
       - _US_美国 10
-      - _GB_英国->🇩🇪_DE_德国
       - _US_美国 11
       - _US_美国 12
       - _US_美国 13
       - _US_美国 14
-      - _US_美国->🇸🇬_SG_新加坡
-      - _US_美国->🇸🇬_SG_新加坡 2
+      - _SG_新加坡 2
       - _US_美国 15
       - _US_美国 16
-      - _CR_哥斯达黎加->🇸🇬_SG_新加坡
-      - _US_美国->🇸🇬_SG_新加坡 3
-      - _US_美国->🇳🇱_NL_荷兰
-      - _US_美国->🇳🇱_NL_荷兰 2
       - _US_美国 17
       - _US_美国 18
-      - _SG_新加坡 3
-      - _SG_新加坡 4
-      - _US_美国->🇩🇪_DE_德国
-      - _IN_印度
-      - _FR_法国->🇳🇱_NL_荷兰
-      - _FR_法国
-      - _US_美国->🇸🇬_SG_新加坡 4
-      - _US_美国->🇬🇧_GB_英国
-      - _VN_越南
-      - _KR_韩国
-      - _US_美国->🇹🇼_TW_台湾
-      - _CN_中国
-      - _US_美国->🇹🇼_TW_台湾 2
       - _US_美国 19
-      - _CA_加拿大
+      - _JP_日本 2
+      - _US_美国 20
+      - _US_美国 21
+      - _CN_中国->🇦🇺_AU_澳大利亚
+      - _US_美国 22
+      - _FR_法国->🇳🇱_NL_荷兰
+      - _US_美国 23
+      - _US_美国 24
+      - _GB_英国
+      - _HK_香港->🇳🇱_NL_荷兰
+      - _US_美国->🇬🇧_GB_英国
+      - _US_美国->🇳🇱_NL_荷兰
+      - _US_美国 25
+      - _US_美国->🇩🇪_DE_德国
+      - _CN_中国->🇺🇸_US_美国 3
+      - _US_美国->🇳🇱_NL_荷兰 2
+      - _CN_中国->🇦🇷_AR_阿根廷
+      - _CN_中国->🇧🇷_BR_巴西
+      - _JP_日本 3
+      - _US_美国->🇬🇧_GB_英国 2
+      - _CN_中国->🇬🇧_GB_英国
+      - _CN_中国->🇯🇵_JP_日本
+      - _GB_英国 2
+      - _US_美国 26
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - _CN_中国->🇸🇬_SG_新加坡
-      - _CN_中国->🇰🇷_KR_韩国
-      - _CN_中国->🇭🇰_HK_香港
-      - _CN_中国->🇭🇰_HK_香港 2
       - _SG_新加坡
-      - _SG_新加坡 2
-      - _HK_香港
-      - _TW_台湾
+      - _CN_中国->🇸🇬_SG_新加坡
+      - _US_美国->🇰🇷_KR_韩国
+      - _CN_中国->🇺🇸_US_美国
+      - _JP_日本
       - _US_美国
       - _US_美国 2
+      - _CN_中国->🇺🇸_US_美国 2
       - _US_美国 3
       - _US_美国 4
       - _US_美国 5
       - _US_美国 6
       - _US_美国 7
       - _US_美国 8
-      - _RU_俄罗斯联邦->🇭🇰_HK_香港
       - _US_美国 9
-      - _TW_台湾 2
       - _US_美国 10
-      - _GB_英国->🇩🇪_DE_德国
       - _US_美国 11
       - _US_美国 12
       - _US_美国 13
       - _US_美国 14
-      - _US_美国->🇸🇬_SG_新加坡
-      - _US_美国->🇸🇬_SG_新加坡 2
+      - _SG_新加坡 2
       - _US_美国 15
       - _US_美国 16
-      - _CR_哥斯达黎加->🇸🇬_SG_新加坡
-      - _US_美国->🇸🇬_SG_新加坡 3
-      - _US_美国->🇳🇱_NL_荷兰
-      - _US_美国->🇳🇱_NL_荷兰 2
       - _US_美国 17
       - _US_美国 18
-      - _SG_新加坡 3
-      - _SG_新加坡 4
-      - _US_美国->🇩🇪_DE_德国
-      - _IN_印度
-      - _FR_法国->🇳🇱_NL_荷兰
-      - _FR_法国
-      - _US_美国->🇸🇬_SG_新加坡 4
-      - _US_美国->🇬🇧_GB_英国
-      - _VN_越南
-      - _KR_韩国
-      - _US_美国->🇹🇼_TW_台湾
-      - _CN_中国
-      - _US_美国->🇹🇼_TW_台湾 2
       - _US_美国 19
-      - _CA_加拿大
+      - _JP_日本 2
+      - _US_美国 20
+      - _US_美国 21
+      - _CN_中国->🇦🇺_AU_澳大利亚
+      - _US_美国 22
+      - _FR_法国->🇳🇱_NL_荷兰
+      - _US_美国 23
+      - _US_美国 24
+      - _GB_英国
+      - _HK_香港->🇳🇱_NL_荷兰
+      - _US_美国->🇬🇧_GB_英国
+      - _US_美国->🇳🇱_NL_荷兰
+      - _US_美国 25
+      - _US_美国->🇩🇪_DE_德国
+      - _CN_中国->🇺🇸_US_美国 3
+      - _US_美国->🇳🇱_NL_荷兰 2
+      - _CN_中国->🇦🇷_AR_阿根廷
+      - _CN_中国->🇧🇷_BR_巴西
+      - _JP_日本 3
+      - _US_美国->🇬🇧_GB_英国 2
+      - _CN_中国->🇬🇧_GB_英国
+      - _CN_中国->🇯🇵_JP_日本
+      - _GB_英国 2
+      - _US_美国 26
   - name: 📢 谷歌FCM
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - _CN_中国->🇸🇬_SG_新加坡
-      - _CN_中国->🇰🇷_KR_韩国
-      - _CN_中国->🇭🇰_HK_香港
-      - _CN_中国->🇭🇰_HK_香港 2
       - _SG_新加坡
-      - _SG_新加坡 2
-      - _HK_香港
-      - _TW_台湾
+      - _CN_中国->🇸🇬_SG_新加坡
+      - _US_美国->🇰🇷_KR_韩国
+      - _CN_中国->🇺🇸_US_美国
+      - _JP_日本
       - _US_美国
       - _US_美国 2
+      - _CN_中国->🇺🇸_US_美国 2
       - _US_美国 3
       - _US_美国 4
       - _US_美国 5
       - _US_美国 6
       - _US_美国 7
       - _US_美国 8
-      - _RU_俄罗斯联邦->🇭🇰_HK_香港
       - _US_美国 9
-      - _TW_台湾 2
       - _US_美国 10
-      - _GB_英国->🇩🇪_DE_德国
       - _US_美国 11
       - _US_美国 12
       - _US_美国 13
       - _US_美国 14
-      - _US_美国->🇸🇬_SG_新加坡
-      - _US_美国->🇸🇬_SG_新加坡 2
+      - _SG_新加坡 2
       - _US_美国 15
       - _US_美国 16
-      - _CR_哥斯达黎加->🇸🇬_SG_新加坡
-      - _US_美国->🇸🇬_SG_新加坡 3
-      - _US_美国->🇳🇱_NL_荷兰
-      - _US_美国->🇳🇱_NL_荷兰 2
       - _US_美国 17
       - _US_美国 18
-      - _SG_新加坡 3
-      - _SG_新加坡 4
-      - _US_美国->🇩🇪_DE_德国
-      - _IN_印度
-      - _FR_法国->🇳🇱_NL_荷兰
-      - _FR_法国
-      - _US_美国->🇸🇬_SG_新加坡 4
-      - _US_美国->🇬🇧_GB_英国
-      - _VN_越南
-      - _KR_韩国
-      - _US_美国->🇹🇼_TW_台湾
-      - _CN_中国
-      - _US_美国->🇹🇼_TW_台湾 2
       - _US_美国 19
-      - _CA_加拿大
+      - _JP_日本 2
+      - _US_美国 20
+      - _US_美国 21
+      - _CN_中国->🇦🇺_AU_澳大利亚
+      - _US_美国 22
+      - _FR_法国->🇳🇱_NL_荷兰
+      - _US_美国 23
+      - _US_美国 24
+      - _GB_英国
+      - _HK_香港->🇳🇱_NL_荷兰
+      - _US_美国->🇬🇧_GB_英国
+      - _US_美国->🇳🇱_NL_荷兰
+      - _US_美国 25
+      - _US_美国->🇩🇪_DE_德国
+      - _CN_中国->🇺🇸_US_美国 3
+      - _US_美国->🇳🇱_NL_荷兰 2
+      - _CN_中国->🇦🇷_AR_阿根廷
+      - _CN_中国->🇧🇷_BR_巴西
+      - _JP_日本 3
+      - _US_美国->🇬🇧_GB_英国 2
+      - _CN_中国->🇬🇧_GB_英国
+      - _CN_中国->🇯🇵_JP_日本
+      - _GB_英国 2
+      - _US_美国 26
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -405,56 +405,56 @@ proxy-groups:
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - _CN_中国->🇸🇬_SG_新加坡
-      - _CN_中国->🇰🇷_KR_韩国
-      - _CN_中国->🇭🇰_HK_香港
-      - _CN_中国->🇭🇰_HK_香港 2
       - _SG_新加坡
-      - _SG_新加坡 2
-      - _HK_香港
-      - _TW_台湾
+      - _CN_中国->🇸🇬_SG_新加坡
+      - _US_美国->🇰🇷_KR_韩国
+      - _CN_中国->🇺🇸_US_美国
+      - _JP_日本
       - _US_美国
       - _US_美国 2
+      - _CN_中国->🇺🇸_US_美国 2
       - _US_美国 3
       - _US_美国 4
       - _US_美国 5
       - _US_美国 6
       - _US_美国 7
       - _US_美国 8
-      - _RU_俄罗斯联邦->🇭🇰_HK_香港
       - _US_美国 9
-      - _TW_台湾 2
       - _US_美国 10
-      - _GB_英国->🇩🇪_DE_德国
       - _US_美国 11
       - _US_美国 12
       - _US_美国 13
       - _US_美国 14
-      - _US_美国->🇸🇬_SG_新加坡
-      - _US_美国->🇸🇬_SG_新加坡 2
+      - _SG_新加坡 2
       - _US_美国 15
       - _US_美国 16
-      - _CR_哥斯达黎加->🇸🇬_SG_新加坡
-      - _US_美国->🇸🇬_SG_新加坡 3
-      - _US_美国->🇳🇱_NL_荷兰
-      - _US_美国->🇳🇱_NL_荷兰 2
       - _US_美国 17
       - _US_美国 18
-      - _SG_新加坡 3
-      - _SG_新加坡 4
-      - _US_美国->🇩🇪_DE_德国
-      - _IN_印度
-      - _FR_法国->🇳🇱_NL_荷兰
-      - _FR_法国
-      - _US_美国->🇸🇬_SG_新加坡 4
-      - _US_美国->🇬🇧_GB_英国
-      - _VN_越南
-      - _KR_韩国
-      - _US_美国->🇹🇼_TW_台湾
-      - _CN_中国
-      - _US_美国->🇹🇼_TW_台湾 2
       - _US_美国 19
-      - _CA_加拿大
+      - _JP_日本 2
+      - _US_美国 20
+      - _US_美国 21
+      - _CN_中国->🇦🇺_AU_澳大利亚
+      - _US_美国 22
+      - _FR_法国->🇳🇱_NL_荷兰
+      - _US_美国 23
+      - _US_美国 24
+      - _GB_英国
+      - _HK_香港->🇳🇱_NL_荷兰
+      - _US_美国->🇬🇧_GB_英国
+      - _US_美国->🇳🇱_NL_荷兰
+      - _US_美国 25
+      - _US_美国->🇩🇪_DE_德国
+      - _CN_中国->🇺🇸_US_美国 3
+      - _US_美国->🇳🇱_NL_荷兰 2
+      - _CN_中国->🇦🇷_AR_阿根廷
+      - _CN_中国->🇧🇷_BR_巴西
+      - _JP_日本 3
+      - _US_美国->🇬🇧_GB_英国 2
+      - _CN_中国->🇬🇧_GB_英国
+      - _CN_中国->🇯🇵_JP_日本
+      - _GB_英国 2
+      - _US_美国 26
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
@@ -507,598 +507,6 @@ rules:
   - DOMAIN,app.adjust.com,🎯 全球直连
   - DOMAIN,bdtj.tagtic.cn,🎯 全球直连
   - DOMAIN,rewards.hypixel.net,🎯 全球直连
-  - DOMAIN-KEYWORD,admarvel,🛑 全球拦截
-  - DOMAIN-KEYWORD,admaster,🛑 全球拦截
-  - DOMAIN-KEYWORD,adsage,🛑 全球拦截
-  - DOMAIN-KEYWORD,adsensor,🛑 全球拦截
-  - DOMAIN-KEYWORD,adservice,🛑 全球拦截
-  - DOMAIN-KEYWORD,adsmogo,🛑 全球拦截
-  - DOMAIN-KEYWORD,adsrvmedia,🛑 全球拦截
-  - DOMAIN-KEYWORD,adsserving,🛑 全球拦截
-  - DOMAIN-KEYWORD,adsystem,🛑 全球拦截
-  - DOMAIN-KEYWORD,adwords,🛑 全球拦截
-  - DOMAIN-KEYWORD,applovin,🛑 全球拦截
-  - DOMAIN-KEYWORD,appsflyer,🛑 全球拦截
-  - DOMAIN-KEYWORD,domob,🛑 全球拦截
-  - DOMAIN-KEYWORD,duomeng,🛑 全球拦截
-  - DOMAIN-KEYWORD,dwtrack,🛑 全球拦截
-  - DOMAIN-KEYWORD,guanggao,🛑 全球拦截
-  - DOMAIN-KEYWORD,omgmta,🛑 全球拦截
-  - DOMAIN-KEYWORD,omniture,🛑 全球拦截
-  - DOMAIN-KEYWORD,openx,🛑 全球拦截
-  - DOMAIN-KEYWORD,partnerad,🛑 全球拦截
-  - DOMAIN-KEYWORD,pingfore,🛑 全球拦截
-  - DOMAIN-KEYWORD,socdm,🛑 全球拦截
-  - DOMAIN-KEYWORD,supersonicads,🛑 全球拦截
-  - DOMAIN-KEYWORD,wlmonitor,🛑 全球拦截
-  - DOMAIN-KEYWORD,zjtoolbar,🛑 全球拦截
-  - DOMAIN-SUFFIX,09mk.cn,🛑 全球拦截
-  - DOMAIN-SUFFIX,100peng.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,114la.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,123juzi.net,🛑 全球拦截
-  - DOMAIN-SUFFIX,138lm.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,17un.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,2cnt.net,🛑 全球拦截
-  - DOMAIN-SUFFIX,3gmimo.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,3xx.vip,🛑 全球拦截
-  - DOMAIN-SUFFIX,51.la,🛑 全球拦截
-  - DOMAIN-SUFFIX,51taifu.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,51yes.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,600ad.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,6dad.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,70e.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,86.cc,🛑 全球拦截
-  - DOMAIN-SUFFIX,8le8le.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,8ox.cn,🛑 全球拦截
-  - DOMAIN-SUFFIX,95558000.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,99click.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,99youmeng.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,a3p4.net,🛑 全球拦截
-  - DOMAIN-SUFFIX,acs86.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,acxiom-online.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,ad-brix.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,ad-delivery.net,🛑 全球拦截
-  - DOMAIN-SUFFIX,ad-locus.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,ad-plus.cn,🛑 全球拦截
-  - DOMAIN-SUFFIX,ad7.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,adadapted.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,adadvisor.net,🛑 全球拦截
-  - DOMAIN-SUFFIX,adap.tv,🛑 全球拦截
-  - DOMAIN-SUFFIX,adbana.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,adchina.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,adcome.cn,🛑 全球拦截
-  - DOMAIN-SUFFIX,ader.mobi,🛑 全球拦截
-  - DOMAIN-SUFFIX,adform.net,🛑 全球拦截
-  - DOMAIN-SUFFIX,adfuture.cn,🛑 全球拦截
-  - DOMAIN-SUFFIX,adhouyi.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,adinfuse.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,adirects.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,adjust.io,🛑 全球拦截
-  - DOMAIN-SUFFIX,adkmob.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,adlive.cn,🛑 全球拦截
-  - DOMAIN-SUFFIX,adlocus.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,admaji.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,admin6.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,admon.cn,🛑 全球拦截
-  - DOMAIN-SUFFIX,adnyg.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,adpolestar.net,🛑 全球拦截
-  - DOMAIN-SUFFIX,adpro.cn,🛑 全球拦截
-  - DOMAIN-SUFFIX,adpush.cn,🛑 全球拦截
-  - DOMAIN-SUFFIX,adquan.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,adreal.cn,🛑 全球拦截
-  - DOMAIN-SUFFIX,ads8.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,adsame.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,adsmogo.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,adsmogo.org,🛑 全球拦截
-  - DOMAIN-SUFFIX,adsunflower.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,adsunion.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,adtrk.me,🛑 全球拦截
-  - DOMAIN-SUFFIX,adups.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,aduu.cn,🛑 全球拦截
-  - DOMAIN-SUFFIX,advertising.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,adview.cn,🛑 全球拦截
-  - DOMAIN-SUFFIX,advmob.cn,🛑 全球拦截
-  - DOMAIN-SUFFIX,adwetec.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,adwhirl.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,adwo.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,adxmi.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,adyun.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,adzerk.net,🛑 全球拦截
-  - DOMAIN-SUFFIX,agrant.cn,🛑 全球拦截
-  - DOMAIN-SUFFIX,agrantsem.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,aihaoduo.cn,🛑 全球拦截
-  - DOMAIN-SUFFIX,ajapk.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,allyes.cn,🛑 全球拦截
-  - DOMAIN-SUFFIX,allyes.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,amazon-adsystem.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,analysys.cn,🛑 全球拦截
-  - DOMAIN-SUFFIX,angsrvr.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,anquan.org,🛑 全球拦截
-  - DOMAIN-SUFFIX,anysdk.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,appadhoc.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,appads.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,appboy.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,appdriver.cn,🛑 全球拦截
-  - DOMAIN-SUFFIX,appjiagu.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,applifier.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,appsflyer.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,atdmt.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,baifendian.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,banmamedia.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,baoyatu.cc,🛑 全球拦截
-  - DOMAIN-SUFFIX,baycode.cn,🛑 全球拦截
-  - DOMAIN-SUFFIX,bayimob.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,behe.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,bfshan.cn,🛑 全球拦截
-  - DOMAIN-SUFFIX,biddingos.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,biddingx.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,bjvvqu.cn,🛑 全球拦截
-  - DOMAIN-SUFFIX,bjxiaohua.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,bloggerads.net,🛑 全球拦截
-  - DOMAIN-SUFFIX,branch.io,🛑 全球拦截
-  - DOMAIN-SUFFIX,bsdev.cn,🛑 全球拦截
-  - DOMAIN-SUFFIX,bshare.cn,🛑 全球拦截
-  - DOMAIN-SUFFIX,btyou.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,bugtags.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,buysellads.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,c0563.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,cacafly.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,casee.cn,🛑 全球拦截
-  - DOMAIN-SUFFIX,cdnmaster.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,chance-ad.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,chanet.com.cn,🛑 全球拦截
-  - DOMAIN-SUFFIX,chartbeat.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,chartboost.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,chengadx.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,chmae.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,clickadu.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,clicki.cn,🛑 全球拦截
-  - DOMAIN-SUFFIX,clicktracks.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,clickzs.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,cloudmobi.net,🛑 全球拦截
-  - DOMAIN-SUFFIX,cmcore.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,cnxad.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,cnzz.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,cnzzlink.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,cocounion.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,coocaatv.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,cooguo.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,coolguang.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,coremetrics.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,cpmchina.co,🛑 全球拦截
-  - DOMAIN-SUFFIX,cpx24.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,crasheye.cn,🛑 全球拦截
-  - DOMAIN-SUFFIX,crosschannel.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,ctrmi.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,customer-security.online,🛑 全球拦截
-  - DOMAIN-SUFFIX,daoyoudao.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,datouniao.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,ddapp.cn,🛑 全球拦截
-  - DOMAIN-SUFFIX,dianjoy.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,dianru.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,disqusads.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,domob.cn,🛑 全球拦截
-  - DOMAIN-SUFFIX,domob.com.cn,🛑 全球拦截
-  - DOMAIN-SUFFIX,domob.org,🛑 全球拦截
-  - DOMAIN-SUFFIX,dotmore.com.tw,🛑 全球拦截
-  - DOMAIN-SUFFIX,doubleverify.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,doudouguo.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,doumob.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,duanat.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,duiba.com.cn,🛑 全球拦截
-  - DOMAIN-SUFFIX,duomeng.cn,🛑 全球拦截
-  - DOMAIN-SUFFIX,dxpmedia.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,edigitalsurvey.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,eduancm.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,emarbox.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,exosrv.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,fancyapi.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,feitian001.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,feixin2.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,flashtalking.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,fraudmetrix.cn,🛑 全球拦截
-  - DOMAIN-SUFFIX,g1.tagtic.cn,🛑 全球拦截
-  - DOMAIN-SUFFIX,gentags.net,🛑 全球拦截
-  - DOMAIN-SUFFIX,gepush.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,getui.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,glispa.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,go-mpulse,🛑 全球拦截
-  - DOMAIN-SUFFIX,go-mpulse.net,🛑 全球拦截
-  - DOMAIN-SUFFIX,godloveme.cn,🛑 全球拦截
-  - DOMAIN-SUFFIX,gridsum.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,gridsumdissector.cn,🛑 全球拦截
-  - DOMAIN-SUFFIX,gridsumdissector.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,growingio.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,guohead.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,guomob.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,haoghost.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,hivecn.cn,🛑 全球拦截
-  - DOMAIN-SUFFIX,hypers.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,icast.cn,🛑 全球拦截
-  - DOMAIN-SUFFIX,igexin.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,il8r.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,imageter.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,immob.cn,🛑 全球拦截
-  - DOMAIN-SUFFIX,inad.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,inmobi.cn,🛑 全球拦截
-  - DOMAIN-SUFFIX,inmobi.net,🛑 全球拦截
-  - DOMAIN-SUFFIX,inmobicdn.cn,🛑 全球拦截
-  - DOMAIN-SUFFIX,inmobicdn.net,🛑 全球拦截
-  - DOMAIN-SUFFIX,innity.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,instabug.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,intely.cn,🛑 全球拦截
-  - DOMAIN-SUFFIX,iperceptions.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,ipinyou.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,irs01.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,irs01.net,🛑 全球拦截
-  - DOMAIN-SUFFIX,irs09.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,istreamsche.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,jesgoo.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,jiaeasy.net,🛑 全球拦截
-  - DOMAIN-SUFFIX,jiguang.cn,🛑 全球拦截
-  - DOMAIN-SUFFIX,jimdo.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,jisucn.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,jmgehn.cn,🛑 全球拦截
-  - DOMAIN-SUFFIX,jpush.cn,🛑 全球拦截
-  - DOMAIN-SUFFIX,jusha.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,juzi.cn,🛑 全球拦截
-  - DOMAIN-SUFFIX,juzilm.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,kejet.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,kejet.net,🛑 全球拦截
-  - DOMAIN-SUFFIX,keydot.net,🛑 全球拦截
-  - DOMAIN-SUFFIX,keyrun.cn,🛑 全球拦截
-  - DOMAIN-SUFFIX,kmd365.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,krux.net,🛑 全球拦截
-  - DOMAIN-SUFFIX,lnk0.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,lnk8.cn,🛑 全球拦截
-  - DOMAIN-SUFFIX,localytics.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,lomark.cn,🛑 全球拦截
-  - DOMAIN-SUFFIX,lotuseed.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,lrswl.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,lufax.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,madhouse.cn,🛑 全球拦截
-  - DOMAIN-SUFFIX,madmini.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,madserving.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,magicwindow.cn,🛑 全球拦截
-  - DOMAIN-SUFFIX,mathtag.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,maysunmedia.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,mbai.cn,🛑 全球拦截
-  - DOMAIN-SUFFIX,mediaplex.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,mediav.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,megajoy.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,mgogo.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,miaozhen.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,microad-cn.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,miidi.net,🛑 全球拦截
-  - DOMAIN-SUFFIX,mijifen.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,mixpanel.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,mjmobi.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,mng-ads.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,moad.cn,🛑 全球拦截
-  - DOMAIN-SUFFIX,moatads.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,mobaders.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,mobclix.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,mobgi.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,mobisage.cn,🛑 全球拦截
-  - DOMAIN-SUFFIX,mobvista.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,moogos.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,mopub.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,moquanad.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,mpush.cn,🛑 全球拦截
-  - DOMAIN-SUFFIX,mxpnl.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,myhug.cn,🛑 全球拦截
-  - DOMAIN-SUFFIX,mzy2014.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,networkbench.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,ninebox.cn,🛑 全球拦截
-  - DOMAIN-SUFFIX,ntalker.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,nylalobghyhirgh.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,o2omobi.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,oadz.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,oneapm.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,onetad.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,optaim.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,optimix.asia,🛑 全球拦截
-  - DOMAIN-SUFFIX,optimix.cn,🛑 全球拦截
-  - DOMAIN-SUFFIX,optimizelyapis.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,overture.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,p0y.cn,🛑 全球拦截
-  - DOMAIN-SUFFIX,pagechoice.net,🛑 全球拦截
-  - DOMAIN-SUFFIX,pingdom.net,🛑 全球拦截
-  - DOMAIN-SUFFIX,plugrush.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,popin.cc,🛑 全球拦截
-  - DOMAIN-SUFFIX,pro.cn,🛑 全球拦截
-  - DOMAIN-SUFFIX,publicidad.net,🛑 全球拦截
-  - DOMAIN-SUFFIX,publicidad.tv,🛑 全球拦截
-  - DOMAIN-SUFFIX,pubmatic.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,pubnub.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,qcl777.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,qiyou.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,qtmojo.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,quantcount.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,qucaigg.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,qumi.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,qxxys.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,reachmax.cn,🛑 全球拦截
-  - DOMAIN-SUFFIX,responsys.net,🛑 全球拦截
-  - DOMAIN-SUFFIX,revsci.net,🛑 全球拦截
-  - DOMAIN-SUFFIX,rlcdn.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,rtbasia.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,sanya1.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,scupio.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,serving-sys.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,shuiguo.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,shuzilm.cn,🛑 全球拦截
-  - DOMAIN-SUFFIX,similarweb.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,sitemeter.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,sitescout.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,sitetag.us,🛑 全球拦截
-  - DOMAIN-SUFFIX,smartmad.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,social-touch.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,somecoding.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,sponsorpay.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,stargame.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,stg8.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,switchadhub.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,sycbbs.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,synacast.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,sysdig.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,talkingdata.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,talkingdata.net,🛑 全球拦截
-  - DOMAIN-SUFFIX,tansuotv.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,tanv.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,tanx.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,tapjoy.cn,🛑 全球拦截
-  - DOMAIN-SUFFIX,th7.cn,🛑 全球拦截
-  - DOMAIN-SUFFIX,thoughtleadr.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,tianmidian.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,tiqcdn.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,touclick.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,trafficjam.cn,🛑 全球拦截
-  - DOMAIN-SUFFIX,trafficmp.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,tuia.cn,🛑 全球拦截
-  - DOMAIN-SUFFIX,ueadlian.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,uerzyr.cn,🛑 全球拦截
-  - DOMAIN-SUFFIX,ugdtimg.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,ugvip.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,ujian.cc,🛑 全球拦截
-  - DOMAIN-SUFFIX,ukeiae.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,umeng.co,🛑 全球拦截
-  - DOMAIN-SUFFIX,umeng.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,umtrack.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,unimhk.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,union-wifi.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,union001.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,unionsy.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,unlitui.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,uri6.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,ushaqi.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,usingde.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,uuzu.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,uyunad.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,vamaker.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,vlion.cn,🛑 全球拦截
-  - DOMAIN-SUFFIX,voiceads.cn,🛑 全球拦截
-  - DOMAIN-SUFFIX,voiceads.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,vpon.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,vungle.cn,🛑 全球拦截
-  - DOMAIN-SUFFIX,vungle.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,waps.cn,🛑 全球拦截
-  - DOMAIN-SUFFIX,wapx.cn,🛑 全球拦截
-  - DOMAIN-SUFFIX,webterren.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,whpxy.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,winads.cn,🛑 全球拦截
-  - DOMAIN-SUFFIX,winasdaq.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,wiyun.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,wooboo.com.cn,🛑 全球拦截
-  - DOMAIN-SUFFIX,wqmobile.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,wrating.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,wumii.cn,🛑 全球拦截
-  - DOMAIN-SUFFIX,xcy8.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,xdrig.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,xiaozhen.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,xibao100.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,xtgreat.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,xy.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,yandui.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,yigao.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,yijifen.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,yinooo.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,yiqifa.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,yiwk.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,ylunion.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,ymapp.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,ymcdn.cn,🛑 全球拦截
-  - DOMAIN-SUFFIX,yongyuelm.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,yooli.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,youmi.net,🛑 全球拦截
-  - DOMAIN-SUFFIX,youxiaoad.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,yoyi.com.cn,🛑 全球拦截
-  - DOMAIN-SUFFIX,yoyi.tv,🛑 全球拦截
-  - DOMAIN-SUFFIX,yrxmr.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,ysjwj.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,yunjiasu.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,yunpifu.cn,🛑 全球拦截
-  - DOMAIN-SUFFIX,zampdsp.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,zamplus.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,zcdsp.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,zhidian3g.cn,🛑 全球拦截
-  - DOMAIN-SUFFIX,zhiziyun.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,zhjfad.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,zqzxz.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,zzsx8.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,acuityplatform.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,ad-stir.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,ad-survey.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,ad4game.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,adcloud.jp,🛑 全球拦截
-  - DOMAIN-SUFFIX,adcolony.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,addthis.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,adfurikun.jp,🛑 全球拦截
-  - DOMAIN-SUFFIX,adhigh.net,🛑 全球拦截
-  - DOMAIN-SUFFIX,adhood.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,adinall.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,adition.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,adk2x.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,admarket.mobi,🛑 全球拦截
-  - DOMAIN-SUFFIX,admarvel.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,admedia.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,adnxs.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,adotmob.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,adperium.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,adriver.ru,🛑 全球拦截
-  - DOMAIN-SUFFIX,adroll.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,adsco.re,🛑 全球拦截
-  - DOMAIN-SUFFIX,adservice.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,adsrvr.org,🛑 全球拦截
-  - DOMAIN-SUFFIX,adsymptotic.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,adtaily.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,adtech.de,🛑 全球拦截
-  - DOMAIN-SUFFIX,adtechjp.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,adtechus.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,airpush.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,am15.net,🛑 全球拦截
-  - DOMAIN-SUFFIX,amobee.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,appier.net,🛑 全球拦截
-  - DOMAIN-SUFFIX,applift.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,apsalar.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,atas.io,🛑 全球拦截
-  - DOMAIN-SUFFIX,awempire.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,axonix.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,beintoo.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,bepolite.eu,🛑 全球拦截
-  - DOMAIN-SUFFIX,bidtheatre.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,bidvertiser.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,blismedia.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,brucelead.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,bttrack.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,casalemedia.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,celtra.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,channeladvisor.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,connexity.net,🛑 全球拦截
-  - DOMAIN-SUFFIX,criteo.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,criteo.net,🛑 全球拦截
-  - DOMAIN-SUFFIX,csbew.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,directrev.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,dumedia.ru,🛑 全球拦截
-  - DOMAIN-SUFFIX,effectivemeasure.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,effectivemeasure.net,🛑 全球拦截
-  - DOMAIN-SUFFIX,eqads.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,everesttech.net,🛑 全球拦截
-  - DOMAIN-SUFFIX,exoclick.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,extend.tv,🛑 全球拦截
-  - DOMAIN-SUFFIX,eyereturn.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,fastapi.net,🛑 全球拦截
-  - DOMAIN-SUFFIX,fastclick.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,fastclick.net,🛑 全球拦截
-  - DOMAIN-SUFFIX,flurry.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,gosquared.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,gtags.net,🛑 全球拦截
-  - DOMAIN-SUFFIX,heyzap.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,histats.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,hitslink.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,hot-mob.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,hyperpromote.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,i-mobile.co.jp,🛑 全球拦截
-  - DOMAIN-SUFFIX,imrworldwide.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,inmobi.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,inner-active.mobi,🛑 全球拦截
-  - DOMAIN-SUFFIX,intentiq.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,inter1ads.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,ipredictive.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,ironsrc.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,iskyworker.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,jizzads.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,juicyads.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,kochava.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,leadbolt.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,leadbolt.net,🛑 全球拦截
-  - DOMAIN-SUFFIX,leadboltads.net,🛑 全球拦截
-  - DOMAIN-SUFFIX,leadboltapps.net,🛑 全球拦截
-  - DOMAIN-SUFFIX,leadboltmobile.net,🛑 全球拦截
-  - DOMAIN-SUFFIX,lenzmx.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,liveadvert.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,marketgid.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,marketo.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,mdotm.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,medialytics.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,medialytics.io,🛑 全球拦截
-  - DOMAIN-SUFFIX,meetrics.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,meetrics.net,🛑 全球拦截
-  - DOMAIN-SUFFIX,mgid.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,millennialmedia.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,mobadme.jp,🛑 全球拦截
-  - DOMAIN-SUFFIX,mobfox.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,mobileadtrading.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,mobilityware.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,mojiva.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,mookie1.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,msads.net,🛑 全球拦截
-  - DOMAIN-SUFFIX,mydas.mobi,🛑 全球拦截
-  - DOMAIN-SUFFIX,nend.net,🛑 全球拦截
-  - DOMAIN-SUFFIX,netshelter.net,🛑 全球拦截
-  - DOMAIN-SUFFIX,nexage.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,owneriq.net,🛑 全球拦截
-  - DOMAIN-SUFFIX,pixels.asia,🛑 全球拦截
-  - DOMAIN-SUFFIX,plista.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,popads.net,🛑 全球拦截
-  - DOMAIN-SUFFIX,powerlinks.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,propellerads.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,quantserve.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,rayjump.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,revdepo.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,rubiconproject.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,sape.ru,🛑 全球拦截
-  - DOMAIN-SUFFIX,scorecardresearch.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,segment.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,serving-sys.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,sharethis.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,smaato.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,smaato.net,🛑 全球拦截
-  - DOMAIN-SUFFIX,smartadserver.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,smartnews-ads.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,startapp.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,startappexchange.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,statcounter.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,steelhousemedia.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,stickyadstv.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,supersonic.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,taboola.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,tapjoy.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,tapjoyads.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,trafficjunky.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,trafficjunky.net,🛑 全球拦截
-  - DOMAIN-SUFFIX,tribalfusion.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,turn.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,uberads.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,vidoomy.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,viglink.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,voicefive.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,wedolook.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,yadro.ru,🛑 全球拦截
-  - DOMAIN-SUFFIX,yengo.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,zedo.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,zemanta.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,11h5.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,1kxun.mobi,🛑 全球拦截
-  - DOMAIN-SUFFIX,26zsd.cn,🛑 全球拦截
-  - DOMAIN-SUFFIX,519397.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,626uc.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,915.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,appget.cn,🛑 全球拦截
-  - DOMAIN-SUFFIX,appuu.cn,🛑 全球拦截
-  - DOMAIN-SUFFIX,coinhive.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,huodonghezi.cn,🛑 全球拦截
-  - DOMAIN-SUFFIX,vcbn65.xyz,🛑 全球拦截
-  - DOMAIN-SUFFIX,wanfeng1.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,wep016.top,🛑 全球拦截
-  - DOMAIN-SUFFIX,win-stock.com.cn,🛑 全球拦截
-  - DOMAIN-SUFFIX,zantainet.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,dh54wf.xyz,🛑 全球拦截
-  - DOMAIN-SUFFIX,g2q3e.cn,🛑 全球拦截
-  - DOMAIN-SUFFIX,114so.cn,🛑 全球拦截
-  - DOMAIN-SUFFIX,go.10086.cn,🛑 全球拦截
-  - DOMAIN-SUFFIX,hivedata.cc,🛑 全球拦截
-  - DOMAIN-SUFFIX,navi.gd.chinamobile.com,🛑 全球拦截
   - DOMAIN-SUFFIX,a.youdao.com,🍃 应用净化
   - DOMAIN-SUFFIX,adgeo.corp.163.com,🍃 应用净化
   - DOMAIN-SUFFIX,analytics.126.net,🍃 应用净化
@@ -3768,226 +3176,5 @@ rules:
   - DOMAIN-SUFFIX,zhimg.com,🎯 全球直连
   - DOMAIN-SUFFIX,zhongsou.com,🎯 全球直连
   - DOMAIN-SUFFIX,zhuihd.com,🎯 全球直连
-  - IP-CIDR,8.128.0.0/10,🎯 全球直连,no-resolve
-  - IP-CIDR,8.208.0.0/12,🎯 全球直连,no-resolve
-  - IP-CIDR,14.1.112.0/22,🎯 全球直连,no-resolve
-  - IP-CIDR,41.222.240.0/22,🎯 全球直连,no-resolve
-  - IP-CIDR,41.223.119.0/24,🎯 全球直连,no-resolve
-  - IP-CIDR,43.242.168.0/22,🎯 全球直连,no-resolve
-  - IP-CIDR,45.112.212.0/22,🎯 全球直连,no-resolve
-  - IP-CIDR,47.52.0.0/16,🎯 全球直连,no-resolve
-  - IP-CIDR,47.56.0.0/15,🎯 全球直连,no-resolve
-  - IP-CIDR,47.74.0.0/15,🎯 全球直连,no-resolve
-  - IP-CIDR,47.76.0.0/14,🎯 全球直连,no-resolve
-  - IP-CIDR,47.80.0.0/12,🎯 全球直连,no-resolve
-  - IP-CIDR,47.235.0.0/16,🎯 全球直连,no-resolve
-  - IP-CIDR,47.236.0.0/14,🎯 全球直连,no-resolve
-  - IP-CIDR,47.240.0.0/14,🎯 全球直连,no-resolve
-  - IP-CIDR,47.244.0.0/15,🎯 全球直连,no-resolve
-  - IP-CIDR,47.246.0.0/16,🎯 全球直连,no-resolve
-  - IP-CIDR,47.250.0.0/15,🎯 全球直连,no-resolve
-  - IP-CIDR,47.252.0.0/15,🎯 全球直连,no-resolve
-  - IP-CIDR,47.254.0.0/16,🎯 全球直连,no-resolve
-  - IP-CIDR,59.82.0.0/20,🎯 全球直连,no-resolve
-  - IP-CIDR,59.82.240.0/21,🎯 全球直连,no-resolve
-  - IP-CIDR,59.82.248.0/22,🎯 全球直连,no-resolve
-  - IP-CIDR,72.254.0.0/16,🎯 全球直连,no-resolve
-  - IP-CIDR,103.38.56.0/22,🎯 全球直连,no-resolve
-  - IP-CIDR,103.52.76.0/22,🎯 全球直连,no-resolve
-  - IP-CIDR,103.206.40.0/22,🎯 全球直连,no-resolve
-  - IP-CIDR,110.76.21.0/24,🎯 全球直连,no-resolve
-  - IP-CIDR,110.76.23.0/24,🎯 全球直连,no-resolve
-  - IP-CIDR,112.125.0.0/17,🎯 全球直连,no-resolve
-  - IP-CIDR,116.251.64.0/18,🎯 全球直连,no-resolve
-  - IP-CIDR,119.38.208.0/20,🎯 全球直连,no-resolve
-  - IP-CIDR,119.38.224.0/20,🎯 全球直连,no-resolve
-  - IP-CIDR,119.42.224.0/20,🎯 全球直连,no-resolve
-  - IP-CIDR,139.95.0.0/16,🎯 全球直连,no-resolve
-  - IP-CIDR,140.205.1.0/24,🎯 全球直连,no-resolve
-  - IP-CIDR,140.205.122.0/24,🎯 全球直连,no-resolve
-  - IP-CIDR,147.139.0.0/16,🎯 全球直连,no-resolve
-  - IP-CIDR,149.129.0.0/16,🎯 全球直连,no-resolve
-  - IP-CIDR,155.102.0.0/16,🎯 全球直连,no-resolve
-  - IP-CIDR,161.117.0.0/16,🎯 全球直连,no-resolve
-  - IP-CIDR,163.181.0.0/16,🎯 全球直连,no-resolve
-  - IP-CIDR,170.33.0.0/16,🎯 全球直连,no-resolve
-  - IP-CIDR,198.11.128.0/18,🎯 全球直连,no-resolve
-  - IP-CIDR,205.204.96.0/19,🎯 全球直连,no-resolve
-  - IP-CIDR,19.28.0.0/23,🎯 全球直连,no-resolve
-  - IP-CIDR,45.40.192.0/19,🎯 全球直连,no-resolve
-  - IP-CIDR,49.51.0.0/16,🎯 全球直连,no-resolve
-  - IP-CIDR,62.234.0.0/16,🎯 全球直连,no-resolve
-  - IP-CIDR,94.191.0.0/17,🎯 全球直连,no-resolve
-  - IP-CIDR,103.7.28.0/22,🎯 全球直连,no-resolve
-  - IP-CIDR,103.116.50.0/23,🎯 全球直连,no-resolve
-  - IP-CIDR,103.231.60.0/24,🎯 全球直连,no-resolve
-  - IP-CIDR,109.244.0.0/16,🎯 全球直连,no-resolve
-  - IP-CIDR,111.30.128.0/21,🎯 全球直连,no-resolve
-  - IP-CIDR,111.30.136.0/24,🎯 全球直连,no-resolve
-  - IP-CIDR,111.30.139.0/24,🎯 全球直连,no-resolve
-  - IP-CIDR,111.30.140.0/23,🎯 全球直连,no-resolve
-  - IP-CIDR,115.159.0.0/16,🎯 全球直连,no-resolve
-  - IP-CIDR,119.28.0.0/15,🎯 全球直连,no-resolve
-  - IP-CIDR,120.88.56.0/23,🎯 全球直连,no-resolve
-  - IP-CIDR,121.51.0.0/16,🎯 全球直连,no-resolve
-  - IP-CIDR,129.28.0.0/16,🎯 全球直连,no-resolve
-  - IP-CIDR,129.204.0.0/16,🎯 全球直连,no-resolve
-  - IP-CIDR,129.211.0.0/16,🎯 全球直连,no-resolve
-  - IP-CIDR,132.232.0.0/16,🎯 全球直连,no-resolve
-  - IP-CIDR,134.175.0.0/16,🎯 全球直连,no-resolve
-  - IP-CIDR,146.56.192.0/18,🎯 全球直连,no-resolve
-  - IP-CIDR,148.70.0.0/16,🎯 全球直连,no-resolve
-  - IP-CIDR,150.109.0.0/16,🎯 全球直连,no-resolve
-  - IP-CIDR,152.136.0.0/16,🎯 全球直连,no-resolve
-  - IP-CIDR,162.14.0.0/16,🎯 全球直连,no-resolve
-  - IP-CIDR,162.62.0.0/16,🎯 全球直连,no-resolve
-  - IP-CIDR,170.106.130.0/24,🎯 全球直连,no-resolve
-  - IP-CIDR,182.254.0.0/16,🎯 全球直连,no-resolve
-  - IP-CIDR,188.131.128.0/17,🎯 全球直连,no-resolve
-  - IP-CIDR,203.195.128.0/17,🎯 全球直连,no-resolve
-  - IP-CIDR,203.205.128.0/17,🎯 全球直连,no-resolve
-  - IP-CIDR,210.4.138.0/24,🎯 全球直连,no-resolve
-  - IP-CIDR,211.152.128.0/23,🎯 全球直连,no-resolve
-  - IP-CIDR,211.152.132.0/23,🎯 全球直连,no-resolve
-  - IP-CIDR,211.152.148.0/23,🎯 全球直连,no-resolve
-  - IP-CIDR,212.64.0.0/17,🎯 全球直连,no-resolve
-  - IP-CIDR,212.129.128.0/17,🎯 全球直连,no-resolve
-  - IP-CIDR,45.113.192.0/22,🎯 全球直连,no-resolve
-  - IP-CIDR,63.217.23.0/24,🎯 全球直连,no-resolve
-  - IP-CIDR,63.243.252.0/24,🎯 全球直连,no-resolve
-  - IP-CIDR,103.235.44.0/22,🎯 全球直连,no-resolve
-  - IP-CIDR,104.193.88.0/22,🎯 全球直连,no-resolve
-  - IP-CIDR,106.12.0.0/15,🎯 全球直连,no-resolve
-  - IP-CIDR,114.28.224.0/20,🎯 全球直连,no-resolve
-  - IP-CIDR,119.63.192.0/21,🎯 全球直连,no-resolve
-  - IP-CIDR,180.76.0.0/24,🎯 全球直连,no-resolve
-  - IP-CIDR,180.76.0.0/16,🎯 全球直连,no-resolve
-  - IP-CIDR,182.61.0.0/16,🎯 全球直连,no-resolve
-  - IP-CIDR,185.10.104.0/22,🎯 全球直连,no-resolve
-  - IP-CIDR,202.46.48.0/20,🎯 全球直连,no-resolve
-  - IP-CIDR,203.90.238.0/24,🎯 全球直连,no-resolve
-  - IP-CIDR,43.254.0.0/22,🎯 全球直连,no-resolve
-  - IP-CIDR,45.249.212.0/22,🎯 全球直连,no-resolve
-  - IP-CIDR,49.4.0.0/17,🎯 全球直连,no-resolve
-  - IP-CIDR,78.101.192.0/19,🎯 全球直连,no-resolve
-  - IP-CIDR,78.101.224.0/20,🎯 全球直连,no-resolve
-  - IP-CIDR,81.52.161.0/24,🎯 全球直连,no-resolve
-  - IP-CIDR,85.97.220.0/22,🎯 全球直连,no-resolve
-  - IP-CIDR,103.31.200.0/22,🎯 全球直连,no-resolve
-  - IP-CIDR,103.69.140.0/23,🎯 全球直连,no-resolve
-  - IP-CIDR,103.218.216.0/22,🎯 全球直连,no-resolve
-  - IP-CIDR,114.115.128.0/17,🎯 全球直连,no-resolve
-  - IP-CIDR,114.116.0.0/16,🎯 全球直连,no-resolve
-  - IP-CIDR,116.63.128.0/18,🎯 全球直连,no-resolve
-  - IP-CIDR,116.66.184.0/22,🎯 全球直连,no-resolve
-  - IP-CIDR,116.71.96.0/20,🎯 全球直连,no-resolve
-  - IP-CIDR,116.71.128.0/21,🎯 全球直连,no-resolve
-  - IP-CIDR,116.71.136.0/22,🎯 全球直连,no-resolve
-  - IP-CIDR,116.71.141.0/24,🎯 全球直连,no-resolve
-  - IP-CIDR,116.71.142.0/24,🎯 全球直连,no-resolve
-  - IP-CIDR,116.71.243.0/24,🎯 全球直连,no-resolve
-  - IP-CIDR,116.71.244.0/24,🎯 全球直连,no-resolve
-  - IP-CIDR,116.71.251.0/24,🎯 全球直连,no-resolve
-  - IP-CIDR,117.78.0.0/18,🎯 全球直连,no-resolve
-  - IP-CIDR,119.3.0.0/16,🎯 全球直连,no-resolve
-  - IP-CIDR,119.8.0.0/21,🎯 全球直连,no-resolve
-  - IP-CIDR,119.8.32.0/19,🎯 全球直连,no-resolve
-  - IP-CIDR,121.36.0.0/17,🎯 全球直连,no-resolve
-  - IP-CIDR,121.36.128.0/18,🎯 全球直连,no-resolve
-  - IP-CIDR,121.37.0.0/17,🎯 全球直连,no-resolve
-  - IP-CIDR,122.112.128.0/17,🎯 全球直连,no-resolve
-  - IP-CIDR,139.9.0.0/18,🎯 全球直连,no-resolve
-  - IP-CIDR,139.9.64.0/19,🎯 全球直连,no-resolve
-  - IP-CIDR,139.9.100.0/22,🎯 全球直连,no-resolve
-  - IP-CIDR,139.9.104.0/21,🎯 全球直连,no-resolve
-  - IP-CIDR,139.9.112.0/20,🎯 全球直连,no-resolve
-  - IP-CIDR,139.9.128.0/18,🎯 全球直连,no-resolve
-  - IP-CIDR,139.9.192.0/19,🎯 全球直连,no-resolve
-  - IP-CIDR,139.9.224.0/20,🎯 全球直连,no-resolve
-  - IP-CIDR,139.9.240.0/21,🎯 全球直连,no-resolve
-  - IP-CIDR,139.9.248.0/22,🎯 全球直连,no-resolve
-  - IP-CIDR,139.159.128.0/19,🎯 全球直连,no-resolve
-  - IP-CIDR,139.159.160.0/22,🎯 全球直连,no-resolve
-  - IP-CIDR,139.159.164.0/23,🎯 全球直连,no-resolve
-  - IP-CIDR,139.159.168.0/21,🎯 全球直连,no-resolve
-  - IP-CIDR,139.159.176.0/20,🎯 全球直连,no-resolve
-  - IP-CIDR,139.159.192.0/18,🎯 全球直连,no-resolve
-  - IP-CIDR,159.138.0.0/18,🎯 全球直连,no-resolve
-  - IP-CIDR,159.138.64.0/21,🎯 全球直连,no-resolve
-  - IP-CIDR,159.138.79.0/24,🎯 全球直连,no-resolve
-  - IP-CIDR,159.138.80.0/20,🎯 全球直连,no-resolve
-  - IP-CIDR,159.138.96.0/20,🎯 全球直连,no-resolve
-  - IP-CIDR,159.138.112.0/21,🎯 全球直连,no-resolve
-  - IP-CIDR,159.138.125.0/24,🎯 全球直连,no-resolve
-  - IP-CIDR,159.138.128.0/18,🎯 全球直连,no-resolve
-  - IP-CIDR,159.138.192.0/20,🎯 全球直连,no-resolve
-  - IP-CIDR,159.138.223.0/24,🎯 全球直连,no-resolve
-  - IP-CIDR,159.138.224.0/19,🎯 全球直连,no-resolve
-  - IP-CIDR,168.195.92.0/22,🎯 全球直连,no-resolve
-  - IP-CIDR,185.176.76.0/22,🎯 全球直连,no-resolve
-  - IP-CIDR,197.199.0.0/18,🎯 全球直连,no-resolve
-  - IP-CIDR,197.210.163.0/24,🎯 全球直连,no-resolve
-  - IP-CIDR,197.252.1.0/24,🎯 全球直连,no-resolve
-  - IP-CIDR,197.252.2.0/23,🎯 全球直连,no-resolve
-  - IP-CIDR,197.252.4.0/22,🎯 全球直连,no-resolve
-  - IP-CIDR,197.252.8.0/21,🎯 全球直连,no-resolve
-  - IP-CIDR,200.32.52.0/24,🎯 全球直连,no-resolve
-  - IP-CIDR,200.32.54.0/24,🎯 全球直连,no-resolve
-  - IP-CIDR,200.32.57.0/24,🎯 全球直连,no-resolve
-  - IP-CIDR,203.135.0.0/22,🎯 全球直连,no-resolve
-  - IP-CIDR,203.135.4.0/23,🎯 全球直连,no-resolve
-  - IP-CIDR,203.135.8.0/23,🎯 全球直连,no-resolve
-  - IP-CIDR,203.135.11.0/24,🎯 全球直连,no-resolve
-  - IP-CIDR,203.135.13.0/24,🎯 全球直连,no-resolve
-  - IP-CIDR,203.135.20.0/24,🎯 全球直连,no-resolve
-  - IP-CIDR,203.135.22.0/23,🎯 全球直连,no-resolve
-  - IP-CIDR,203.135.24.0/23,🎯 全球直连,no-resolve
-  - IP-CIDR,203.135.26.0/24,🎯 全球直连,no-resolve
-  - IP-CIDR,203.135.29.0/24,🎯 全球直连,no-resolve
-  - IP-CIDR,203.135.33.0/24,🎯 全球直连,no-resolve
-  - IP-CIDR,203.135.38.0/23,🎯 全球直连,no-resolve
-  - IP-CIDR,203.135.40.0/24,🎯 全球直连,no-resolve
-  - IP-CIDR,203.135.43.0/24,🎯 全球直连,no-resolve
-  - IP-CIDR,203.135.48.0/24,🎯 全球直连,no-resolve
-  - IP-CIDR,203.135.50.0/24,🎯 全球直连,no-resolve
-  - IP-CIDR,42.186.0.0/16,🎯 全球直连,no-resolve
-  - IP-CIDR,45.127.128.0/22,🎯 全球直连,no-resolve
-  - IP-CIDR,45.195.24.0/24,🎯 全球直连,no-resolve
-  - IP-CIDR,45.253.132.0/22,🎯 全球直连,no-resolve
-  - IP-CIDR,45.253.240.0/22,🎯 全球直连,no-resolve
-  - IP-CIDR,45.254.48.0/23,🎯 全球直连,no-resolve
-  - IP-CIDR,59.111.0.0/20,🎯 全球直连,no-resolve
-  - IP-CIDR,59.111.128.0/17,🎯 全球直连,no-resolve
-  - IP-CIDR,103.71.120.0/21,🎯 全球直连,no-resolve
-  - IP-CIDR,103.71.128.0/22,🎯 全球直连,no-resolve
-  - IP-CIDR,103.71.196.0/22,🎯 全球直连,no-resolve
-  - IP-CIDR,103.71.200.0/22,🎯 全球直连,no-resolve
-  - IP-CIDR,103.72.12.0/22,🎯 全球直连,no-resolve
-  - IP-CIDR,103.72.18.0/23,🎯 全球直连,no-resolve
-  - IP-CIDR,103.72.24.0/22,🎯 全球直连,no-resolve
-  - IP-CIDR,103.72.28.0/23,🎯 全球直连,no-resolve
-  - IP-CIDR,103.72.38.0/23,🎯 全球直连,no-resolve
-  - IP-CIDR,103.72.40.0/23,🎯 全球直连,no-resolve
-  - IP-CIDR,103.72.44.0/22,🎯 全球直连,no-resolve
-  - IP-CIDR,103.72.48.0/21,🎯 全球直连,no-resolve
-  - IP-CIDR,103.72.128.0/21,🎯 全球直连,no-resolve
-  - IP-CIDR,103.74.24.0/21,🎯 全球直连,no-resolve
-  - IP-CIDR,103.74.48.0/22,🎯 全球直连,no-resolve
-  - IP-CIDR,103.126.92.0/22,🎯 全球直连,no-resolve
-  - IP-CIDR,103.129.252.0/22,🎯 全球直连,no-resolve
-  - IP-CIDR,103.131.252.0/22,🎯 全球直连,no-resolve
-  - IP-CIDR,103.135.240.0/22,🎯 全球直连,no-resolve
-  - IP-CIDR,103.196.64.0/22,🎯 全球直连,no-resolve
-  - IP-CIDR,106.2.32.0/19,🎯 全球直连,no-resolve
-  - IP-CIDR,106.2.64.0/18,🎯 全球直连,no-resolve
-  - IP-CIDR,114.113.196.0/22,🎯 全球直连,no-resolve
-  - IP-CIDR,114.113.200.0/22,🎯 全球直连,no-resolve
-  - IP-CIDR,115.236.112.0/20,🎯 全球直连,no-resolve
-  - IP-CIDR,115.238.76.0/22,🎯 全球直连,no-resolve
-  - IP-CIDR,123.58.160.0/19,🎯 全球直连,no-resolve
-  - IP-CIDR,223.252.192.0/19,🎯 全球直连,no-resolve
-  - IP-CIDR,101.198.128.0/18,🎯 全球直连,no-resolve
-  - IP-CIDR,101.198.192.0/19,🎯 全球直连,no-resolve
-  - IP-CIDR,101.199.196.0/22,🎯 全球直连,no-resolve
   - GEOIP,CN,🎯 全球直连
   - MATCH,🐟 漏网之鱼
