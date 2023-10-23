@@ -32,24 +32,27 @@ def modIP(nodes):
     nodes_mod_list = []
     for node in nodes:
         if (node):
-            pro_type,node_det = node.split('://')
-            if 'vmess' == pro_type:
-                node_det_json = decode_base64(node_det)
-                node_det_dict = json.loads(node_det_json)
-#                 node_det_dict['ps'] = 'icook.hk-%02.d' % nodes.index(node)
-#                 node_det_dict['ps'] = '%02.d' % nodes.index(node)
-                node_det_dict['ps'] = f'{y}/{m}/{d}-' + node_det_dict['ps']
-                node_det_dict['add'] = 'guolicheng.cfd'
-#                 node_det_dict['add'] = '104.16.245.116'
-                # node_det_dict['add'] = '172.66.43.109' 
-                node_det_json = json.dumps(node_det_dict)
-                node_mod = 'vmess://'+base64.b64encode(node_det_json.encode()).decode('UTF-8')
-                nodes_mod_list.append(node_mod)
-            else:
-                # node_mod = re.sub(r'#(\S+)', '#%02.d' % nodes.index(node), node, 1, re.MULTILINE)
-                node_mod = re.sub(r'#', f'#{y}-{m}-{d}-', node, 1, re.MULTILINE)
-                nodes_mod_list.append(node_mod)
-                # print(node_mod)
+            try:
+                pro_type,node_det = node.split('://')
+                if 'vmess' == pro_type:
+                    node_det_json = decode_base64(node_det)
+                    node_det_dict = json.loads(node_det_json)
+    #                 node_det_dict['ps'] = 'icook.hk-%02.d' % nodes.index(node)
+    #                 node_det_dict['ps'] = '%02.d' % nodes.index(node)
+                    node_det_dict['ps'] = f'{y}/{m}/{d}-' + node_det_dict['ps']
+                    node_det_dict['add'] = 'guolicheng.cfd'
+    #                 node_det_dict['add'] = '104.16.245.116'
+                    # node_det_dict['add'] = '172.66.43.109' 
+                    node_det_json = json.dumps(node_det_dict)
+                    node_mod = 'vmess://'+base64.b64encode(node_det_json.encode()).decode('UTF-8')
+                    nodes_mod_list.append(node_mod)
+                else:
+                    # node_mod = re.sub(r'#(\S+)', '#%02.d' % nodes.index(node), node, 1, re.MULTILINE)
+                    node_mod = re.sub(r'#', f'#{y}-{m}-{d}-', node, 1, re.MULTILINE)
+                    nodes_mod_list.append(node_mod)
+                    # print(node_mod)
+            except:
+                continue
     return '\n'.join(nodes_mod_list)
 
 
@@ -71,13 +74,11 @@ def GenNodesFile(urls, flag):
         nodes = decode_base64(text).split('\n')
         nodes_ori = text
 
-    try:
-        nodes_b64_en = base64.b64encode(modIP(nodes).encode(encoding='UTF-8'))
-        nodes_b64_de = nodes_b64_en.decode('UTF-8')
-        with open(f'{flag}_nodes_mod.txt', 'w', encoding='UTF-8') as w:
-            w.write(nodes_b64_de)
-    except:
-        pass
+    nodes_b64_en = base64.b64encode(modIP(nodes).encode(encoding='UTF-8'))
+    nodes_b64_de = nodes_b64_en.decode('UTF-8')
+
+    with open(f'{flag}_nodes_mod.txt', 'w', encoding='UTF-8') as w:
+        w.write(nodes_b64_de)
 
     with open(f'{flag}_nodes_ori.txt', 'w', encoding='UTF-8') as w:
         w.write(nodes_ori)
