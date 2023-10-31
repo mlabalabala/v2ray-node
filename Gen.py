@@ -89,7 +89,7 @@ def GenNodes4ClashFile(urls, flag):
         print(url)
         res = s.get(url, headers=header, proxies=proxies, verify=False)
         text = res.text
-        with open(f'{flag}.yaml', 'w', encoding='utf8') as w:
+        with open(f'{flag}.txt', 'w', encoding='utf8') as w:
             w.write(text)
         if "<html" not in text:
             break
