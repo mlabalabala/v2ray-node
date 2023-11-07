@@ -1,0 +1,15 @@
+[
+  {
+     "outboundTag": "proxy",
+     "ip": [
+       "geoip:telegram"
+     ],
+     "domain": [
+       "geosite:gfw"
+    ]
+  },
+  {
+    "port": "0-65535",
+    "outboundTag": "direct"
+  }
+]
