@@ -1,1 +1,2 @@
-# node for clash and v2ray
+# node for v2ray
+# clash is no update
